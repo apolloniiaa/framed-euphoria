@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+body {
+  background-color: #311815;
+  color: #c3bebe;
+}
+button {
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: #f0efe5;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #f0efe5;
+    color: #311815;
+  }
+}
+h2 {
+  font-weight: lighter;
+  font-size: 4rem;
+}
+html {
+  @media (max-width: 1440) {
+    font-size: 80%;
+    h2 {
+      color: red;
+    }
+  }
+}

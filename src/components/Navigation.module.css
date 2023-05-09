@@ -1,0 +1,31 @@
+.navigation {
+  display: flex;
+  margin: auto;
+  min-height: 10vh;
+  align-items: center;
+  padding: 1rem 10rem;
+  background-color: #f0efe5;
+  justify-content: space-between;
+}
+
+.links {
+  color: #311815;
+  display: flex;
+  list-style: none;
+}
+a {
+  color: #311815;
+}
+li {
+  padding-left: 10rem;
+  position: relative;
+}
+
+.line {
+  height: 0.23rem;
+  background-color: #311815;
+  width: 0%;
+  position: absolute;
+  bottom: -50%;
+  left: 71%;
+}
