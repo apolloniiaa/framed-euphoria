@@ -25,11 +25,3 @@ h2 {
   font-weight: lighter;
   font-size: 4rem;
 }
-html {
-  @media (max-width: 1440) {
-    font-size: 80%;
-    h2 {
-      color: red;
-    }
-  }
-}

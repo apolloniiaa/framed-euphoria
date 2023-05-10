@@ -8,10 +8,9 @@ const HomePage = () => {
     <div className={style.about}>
       <div className={style.description}>
         <motion.h2
-          // initial={{ x: 0, opacity: 0 }} // Start position at x: 0, with opacity 0
-          animate={{ x: [-100, 0], opacity: [0, 1] }} // Animate from x: -100 to x: 0
+          animate={{ x: [-100, 0], opacity: [0, 1] }}
           transition={{
-            duration: 1.5, // Duration for the image animation
+            duration: 1.5,
             delay: 1,
           }}
           className={style.name}
@@ -20,9 +19,9 @@ const HomePage = () => {
         </motion.h2>
 
         <motion.p
-          animate={{ x: [-100, 0], opacity: [0, 1] }} // Animate from x: -100 to x: 0
+          animate={{ x: [-100, 0], opacity: [0, 1] }}
           transition={{
-            duration: 1.5, // Duration for the image animation
+            duration: 1.5,
             delay: 0.4,
           }}
           className={style.text}
@@ -42,6 +41,7 @@ const HomePage = () => {
         </motion.p>
 
         <motion.button
+          animate={{ x: [-100, 0], opacity: [0, 1] }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className={style.button}

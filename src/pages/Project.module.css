@@ -1,0 +1,19 @@
+.project {
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 5rem 10rem;
+}
+h2 {
+  paddgin: 1rem 0rem;
+  margin-bottom: 2rem;
+}
+.line {
+  height: 0.2rem;
+  background: #f0efe5;
+  margin-bottom: 2rem;
+}
+img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}

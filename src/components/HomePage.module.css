@@ -74,23 +74,10 @@
   .button {
     margin: 2rem 0rem 5rem 0rem;
   }
-  .imgContainer {
-    /* margin-left: 0;
-    background-size: cover;
-    background-position: bottom; */
-  }
-  .img {
-    /* width: 83vw;
-    height: 50vh;
-    background-size: cover;
-    background-position: bottom; */
-  }
 }
 
 @media screen and (max-width: 1024px) {
   h2 {
     width: 60%;
-    /* transform: none !important; */
-    /* transform: translateX(40px) translateZ(0px) !important; */
   }
 }
