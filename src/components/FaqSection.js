@@ -5,8 +5,23 @@ import { motion } from 'framer-motion';
 const FaqSection = () => {
   return (
     <div className={style.faq}>
-      <h2>Gyakran feltett kérdések</h2>
-      <motion.div layout>
+      <motion.h2
+        layout
+        animate={{ x: [-100, 0], opacity: [0, 1] }}
+        transition={{
+          duration: 1.5,
+        }}
+      >
+        Gyakran feltett kérdések
+      </motion.h2>
+      <motion.div
+        layout
+        animate={{ x: [-100, 0], opacity: [0, 1] }}
+        transition={{
+          duration: 1.5,
+          delay: 1,
+        }}
+      >
         <Toggle title='How Do I start?'>
           <div className={style.answer}>
             <p>

@@ -1,18 +1,32 @@
 import style from './Contact.module.css';
+
+import { motion } from 'framer-motion';
+
 const ContactPage = () => {
   return (
     <section id='contact' className={style.contactSection}>
-      <div className={style.sideTitle}>
+      <motion.div
+        animate={{ y: [50, 0], opacity: [0, 1] }}
+        transition={{
+          delay: 0.03,
+          type: 'tween',
+          duration: 0.8,
+          delay: 1,
+        }}
+        className={style.sideTitle}
+      >
         <h2>CONTACT</h2>
-      </div>
+      </motion.div>
       <div className={style.contact} />
-      <div
-        className={style.contactContent}
+
+      <motion.div
+        animate={{ y: [50, 0], opacity: [0, 1] }}
         transition={{
           delay: 0.03,
           type: 'tween',
           duration: 0.8,
         }}
+        className={style.contactContent}
       >
         <div className={style.title}>
           <h4>Kérj árajánlatot!!!</h4>
@@ -47,7 +61,7 @@ const ContactPage = () => {
             <button>Send Message</button>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
