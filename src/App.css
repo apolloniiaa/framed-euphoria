@@ -33,6 +33,63 @@ h2 {
     position: absolute;
     list-style: none;
     left: 0;
+    top: 12%;
+    width: 100%;
+    z-index: 9999;
+    background: #311815;
+    height: 2000px;
+    width: 100%;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .Navigation_menuIcon__-fbrX:hover {
+    color: white;
+    background-color: transparent !important;
+  }
+  .hamburger-react {
+    height: 56px !important;
+  }
+  .Navigation_line__QBN\+6 {
+    display: none !important;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  background-color: #311815;
+  color: #c3bebe;
+}
+button {
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: #f0efe5;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: #f0efe5;
+    color: #311815;
+  }
+}
+h2 {
+  font-weight: lighter;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links-mobile {
+    display: block;
+    position: absolute;
+    list-style: none;
+    left: 0;
     top: 11%;
     width: 100%;
     z-index: 9999;
