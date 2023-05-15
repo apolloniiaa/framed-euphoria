@@ -1,11 +1,11 @@
 .project {
   min-height: 100vh;
   overflow: hidden;
-  padding: 5rem 10rem;
+  padding: 5rem 2rem;
 }
 h2 {
   paddgin: 1rem 0rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
 .line {
   height: 0.2rem;
@@ -26,13 +26,15 @@ h2 {
   .subtitle {
     font-size: 2rem;
     width: 160px;
+    margin-bottom: 0;
   }
   .images {
-    width: 290px;
-    height: 250px;
+    width: 255px;
+    height: 183px;
     object-fit: cover;
+    margin-bottom: 1rem;
   }
   .project {
-    padding: 3rem 3rem;
+    padding: 3rem 2rem;
   }
 }

@@ -54,7 +54,37 @@ img {
   object-fit: cover;
 }
 
-@media (max-width: 1500px) {
-  display: block;
-  margin: 2rem 2rem;
+@media (max-width: 1024px) {
+  .headline {
+    padding-top: 27vh;
+  }
+  .movietitle {
+    top: 14%;
+  }
+
+  .awards {
+    display: block;
+    padding: 0 2rem 0rem 2rem;
+  }
+  p {
+    padding: 1rem 0rem;
+    font-size: 1.7rem;
+  }
+  img,
+  .mainImg {
+    width: 100%;
+    height: 56vh;
+  }
+}
+@media (max-width: 780px) {
+  .awardStyle {
+    padding: 1rem;
+  }
+  p {
+    padding: 1rem 0rem;
+    font-size: 1rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
 }

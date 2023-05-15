@@ -57,7 +57,7 @@ const ContactPage = () => {
           <div className={style.form}>
             <input type='text' placeholder='name' />
             <input type='email' placeholder='email' />
-            <textarea placeholder='message'></textarea>
+            <textarea placeholder='message' cols='42' rows='5'></textarea>
             <button>Send Message</button>
           </div>
         </div>

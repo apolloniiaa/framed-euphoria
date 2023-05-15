@@ -4,7 +4,7 @@
   align-items: center;
   color: white;
   padding: 2rem;
-  background-color: #9e9e9e33;
+  background-color: #9e9e9e82;
 }
 .logo {
   font.size: 20px;
@@ -55,6 +55,7 @@ ul {
     text-decoration: underline;
     width: 100%;
     font-size: 2rem;
+    margin: 0;
   }
   .menuIcon {
     display: block;
