@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import style from './HomePage.module.css';
 import about from '../assets/img/about.jpg';
-import Wave from '../components/Wave';
+import FaqSection from './FaqSection';
 
 const HomePage = () => {
   return (
@@ -49,7 +49,6 @@ const HomePage = () => {
           Kapcsolat
         </motion.button>
       </div>
-
       <div className={style.imgContainer}>
         <motion.img
           animate={{ x: [100, 0], opacity: [0, 1] }} // Animate from x: -100 to x: 0
@@ -62,7 +61,6 @@ const HomePage = () => {
           alt='guy with a camera'
         />
       </div>
-      <Wave />
     </div>
   );
 };

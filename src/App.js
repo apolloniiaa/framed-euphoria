@@ -11,6 +11,7 @@ import Projects from './pages/Project';
 import Contact from './pages/ContactPage';
 import MovieDetail from './pages/MovieDetail';
 import Nav from './components/Nav';
+import FaqSection from './components/FaqSection';
 import './App.css';
 
 function App() {
@@ -32,6 +33,7 @@ function AppContent() {
         <Route path='/' element={<About />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/projects/:id' element={<MovieDetail />} />
+        <Route path='/questions' element={<FaqSection />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
     </div>

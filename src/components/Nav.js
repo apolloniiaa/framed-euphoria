@@ -33,9 +33,10 @@ const Nav = () => {
             className={style.line}
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/' ? '35%' : '0%' }}
+            animate={{ width: pathname === '/' ? '70%' : '0%' }}
           />
         </li>
+
         <li>
           <Link to='/projects' className={style.links}>
             Munkáim
@@ -44,9 +45,22 @@ const Nav = () => {
             className={style.line}
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/projects' ? '35%' : '0%' }}
+            animate={{ width: pathname === '/projects' ? '70%' : '0%' }}
           />
         </li>
+
+        <li>
+          <Link to='/questions' className={style.links}>
+            QA
+          </Link>
+          <Line
+            className={style.line}
+            transition={{ duration: 0.75 }}
+            initial={{ width: '0%' }}
+            animate={{ width: pathname === '/questions' ? '70%' : '0%' }}
+          />
+        </li>
+
         <li>
           <Link to='/contact' className={style.links}>
             Kontakt
@@ -55,7 +69,7 @@ const Nav = () => {
             className={style.line}
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/contact' ? '35%' : '0%' }}
+            animate={{ width: pathname === '/contact' ? '70%' : '0%' }}
           />
         </li>
       </ul>

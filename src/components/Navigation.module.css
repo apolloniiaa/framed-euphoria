@@ -10,6 +10,14 @@
   font.size: 20px;
   color: white;
 }
+.line {
+  height: 0.2rem;
+  background-color: white;
+  position: absolute;
+  bottom: -40%;
+  left: 20%;
+  width: 0%;
+}
 
 .links {
   color: white;
@@ -17,6 +25,9 @@
   list-style: none;
   margin: 0 10px;
   padding: 10px 20px;
+}
+li {
+  position: relative;
 }
 ul {
   list-style: none;
@@ -48,7 +59,7 @@ ul {
   .menuIcon {
     display: block;
     position: absolute;
-    font.size: 30px;
+    font-size: 30px;
     border: none;
     outline: none;
     right: -10px;
