@@ -1,20 +1,30 @@
 import { Link, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import { Spiral as Hamburger } from 'hamburger-react';
+
 import style from '../components/Navigation.module.css';
 import { motion } from 'framer-motion';
+import '../App.css';
 
 const Line = motion.div;
 
 const Nav = () => {
   const { pathname } = useLocation();
+  const [isMobile, setIsMobile] = useState(false);
 
   return (
-    <nav className={style.navigation}>
-      <h1>
-        <a className={style.logo} href='#'>
-          Framed Euphoria
-        </a>
-      </h1>
-      <ul className={style.links}>
+    <nav className={style.navbar}>
+      {!isMobile && (
+        <h1>
+          <a className={style.logo} href='#'>
+            Framed Euphoria
+          </a>
+        </h1>
+      )}
+      <ul
+        className={isMobile ? 'nav-links-mobile' : 'nav-links'}
+        onClick={() => setIsMobile(false)}
+      >
         <li>
           <Link to='/' className={style.links}>
             Főoldal
@@ -49,6 +59,9 @@ const Nav = () => {
           />
         </li>
       </ul>
+      <button className={style.menuIcon} onClick={() => setIsMobile(!isMobile)}>
+        {isMobile ? <Hamburger /> : <Hamburger />}
+      </button>
     </nav>
   );
 };

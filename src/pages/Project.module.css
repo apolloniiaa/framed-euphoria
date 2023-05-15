@@ -12,8 +12,27 @@ h2 {
   background: #f0efe5;
   margin-bottom: 2rem;
 }
-img {
+.images {
   width: 100%;
   height: 70vh;
   object-fit: cover;
+}
+
+@media (max-width: 1300px) {
+  padding: 2rem 2rem;
+}
+
+@media (max-width: 780px) {
+  .subtitle {
+    font-size: 2rem;
+    width: 160px;
+  }
+  .images {
+    width: 290px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .project {
+    padding: 3rem 3rem;
+  }
 }

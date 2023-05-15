@@ -17,10 +17,10 @@ const Project = () => {
       }}
     >
       <motion.div className={style.movie}>
-        <h2> Eljegyzés</h2>
+        <h2 className={style.subtitle}> Eljegyzés</h2>
         <div className={style.line}></div>
         <Link to='/projects/eljegyzes'>
-          <img src={img4} alt='wedding' />
+          <img className={style.images} src={img4} alt='wedding' />
         </Link>
       </motion.div>
 
@@ -32,10 +32,10 @@ const Project = () => {
           delay: 2,
         }}
       >
-        <h2>Esküvő</h2>
+        <h2 className={style.subtitle}>Esküvő</h2>
         <div className={style.line}></div>
         <Link to='/projects/eskuvo'>
-          <img src={img5} alt='wedding' />
+          <img className={style.images} src={img5} alt='wedding' />
         </Link>
       </motion.div>
 
@@ -47,10 +47,10 @@ const Project = () => {
           delay: 3,
         }}
       >
-        <h2>Pár fotók</h2>
+        <h2 className={style.subtitle}>Párok</h2>
         <div className={style.line}></div>
         <Link to='/projects/parok'>
-          <img src={img2} alt='wedding' />
+          <img className={style.images} src={img2} alt='wedding' />
         </Link>
       </motion.div>
     </motion.div>
