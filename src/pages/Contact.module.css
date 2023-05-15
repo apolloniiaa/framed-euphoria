@@ -1,0 +1,146 @@
+section {
+  min-height: 100vh;
+}
+#contact {
+  color: white;
+  margin: 0 18rem;
+}
+.title {
+  margin: 6rem 0 2rem 0;
+}
+p {
+  color: white;
+  padding: 0.7rem;
+}
+h2 {
+  font-size: 2rem;
+  color: white;
+}
+h4 {
+  font-size: 3rem;
+}
+p {
+  text-align: justify;
+}
+spam {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: yellow;
+}
+.data {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 4rem;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+input,
+textarea {
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 0.1rem solid green;
+  width: 100%;
+  color: pink;
+  padding: 0.7rem;
+}
+&:focus {
+  outline: none;
+}
+textarea {
+  width: 100%;
+  height: 50%;
+  resize: none;
+}
+buttom {
+  width: 100%;
+  background-color: transparent;
+  border: 0.1rem solid yellow;
+  height: 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.contactSection {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sideTitle {
+  flex-shrink: 0;
+  width: 30%;
+}
+
+.sideTitle h2 {
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  font-size: 6rem;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  margin-top: 2rem;
+  letter-spacing: 48px;
+}
+
+.contactContent {
+  flex-grow: 1;
+  width: 80%;
+}
+.error {
+  color: red;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 280px) and (max-width: 1080px) {
+  .contact {
+    margin: 1rem;
+    padding: 0 1rem;
+  }
+  .title {
+    margin: 0;
+    text-align: center;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  .data {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+  p {
+    text-align: left;
+  }
+
+  .sideTitle h2 {
+    display: none;
+  }
+  .contactContent {
+    padding: 0 2rem 0 2rem;
+    width: 100%;
+  }
+  .contactSection {
+    display: block;
+  }
+  spam {
+    font-size: 1rem;
+  }
+  .form {
+    margin: 0 0 2rem 0;
+  }
+}

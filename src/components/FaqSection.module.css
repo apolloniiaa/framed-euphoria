@@ -1,0 +1,54 @@
+.faq {
+  margin-top: 10rem;
+  padding: 0 3rem 0 3rem;
+}
+h2 {
+  padding-bottom: 2rem;
+  font-size: 3rem;
+}
+
+h4 {
+  padding: 2rem 0rem;
+}
+
+p {
+  padding: 1rem 0rem;
+}
+.answer {
+  padding: 2rem 0rem;
+}
+
+.questions {
+  padding: 3rem 0rem;
+  cursor: pointer;
+}
+
+.faqLine {
+  background: #9e9e9e9e;
+  height: 0.2rem;
+  margin: 2rem 0;
+  width: 100%;
+}
+.toggle {
+  cursor: pointer;
+}
+
+@media screen and (maxn-width: 1440px) {
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faq {
+    margin-top: 3rem;
+    padding: 0 2rem 0 2rem;
+  }
+  h2 {
+    font-size: 1rem;
+    padding-bottom: 0;
+  }
+  h4 {
+    padding: 1rem 0rem;
+  }
+}
