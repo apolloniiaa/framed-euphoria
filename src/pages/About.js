@@ -1,10 +1,12 @@
 import HomePage from '../components/HomePage';
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../animation';
 
 const About = () => {
   return (
-    <div>
+    <motion.div variants={pageAnimation} initial='hidden' animate='show'>
       <HomePage />
-    </div>
+    </motion.div>
   );
 };
 

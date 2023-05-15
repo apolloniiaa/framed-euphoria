@@ -7,6 +7,9 @@
   min-height: 100%;
   display: flex;
   padding: 10rem 2rem 0 10rem;
+  position: absolute;
+  top: 10%;
+  left: 0%;
 }
 
 .description {
