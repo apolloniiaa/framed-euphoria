@@ -1,26 +1,34 @@
 import { Link } from 'react-router-dom';
-import style from './Project.module.css';
+import { motion } from 'framer-motion';
+import { fade, photoAnim, lineAnim } from '../animation';
 import img4 from '../assets/img/img4.jpg';
 import img5 from '../assets/img/img5.jpg';
 import img2 from '../assets/img/img2.jpg';
-//Animation
-import { motion } from 'framer-motion';
+import style from './Project.module.css';
 
 const Project = () => {
   return (
     <motion.div
       className={style.project}
-      animate={{ x: [-100, 0], opacity: [0, 1] }}
-      transition={{
-        duration: 1.5,
-        delay: 1,
-      }}
+      exit='exit'
+      initial='hidden'
+      animate='show'
     >
       <motion.div className={style.movie}>
-        <h2 className={style.subtitle}> Eljegyzés</h2>
-        <div className={style.line}></div>
+        <motion.h2 variants={fade} className={style.subtitle}>
+          {' '}
+          Eljegyzés
+        </motion.h2>
+        <motion.div variants={lineAnim} className={style.line}></motion.div>
         <Link to='/projects/eljegyzes'>
-          <img className={style.images} src={img4} alt='wedding' />
+          <div className={style.hide}>
+            <motion.img
+              variants={photoAnim}
+              className={style.images}
+              src={img4}
+              alt='wedding'
+            />
+          </div>
         </Link>
       </motion.div>
 
@@ -29,7 +37,7 @@ const Project = () => {
         animate={{ x: [100, 0], opacity: [0, 1] }}
         transition={{
           duration: 1.5,
-          delay: 2,
+          delay: 3,
         }}
       >
         <h2 className={style.subtitle}>Esküvő</h2>

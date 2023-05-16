@@ -7,7 +7,7 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/contact'); // Replace '/kapcsolat' with the actual URL you want to navigate to
+    navigate('/contact');
   };
 
   return (
