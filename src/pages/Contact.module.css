@@ -144,3 +144,37 @@ buttom {
     margin: 0 0 2rem 0;
   }
 }
+
+/* Intro.module.css */
+.introContainer {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.backgroundSlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Add styles for the video image slider component */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  margin-top: 30%;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 24px;
+}

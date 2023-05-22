@@ -63,6 +63,8 @@ const ContactPage = () => {
         </div>
       </motion.div>
     </section>
+
+    ///////SLIDER
   );
 };
 

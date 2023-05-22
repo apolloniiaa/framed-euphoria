@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+
 import { motion } from 'framer-motion';
 import { fade, photoAnim, lineAnim } from '../animation';
 import img4 from '../assets/img/img4.jpg';

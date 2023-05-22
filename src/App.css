@@ -48,6 +48,7 @@ h2 {
   .Navigation_menuIcon__-fbrX:hover {
     color: white;
     background-color: transparent !important;
+    top: 17px;
   }
   .hamburger-react {
     height: 3px !important;

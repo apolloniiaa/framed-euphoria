@@ -1,7 +1,7 @@
 import { useLocation } from 'react-router-dom';
 import { MovieState } from '../movieState';
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import Gallery from '../components/Gallery';
 import style from './MovieDetail.module.css';
 
 const MovieDetail = () => {
@@ -33,6 +33,13 @@ const MovieDetail = () => {
             <h2 className={style.movietitle}>{movie.title}</h2>
             <img src={movie.mainImg} alt='movie' className={style.mainImg} />
           </div>
+
+          <div className={style.awards}>
+            <h2 className={style.galleryTitle}>Look Around | G A L L E R Y </h2>
+          </div>
+
+          <Gallery />
+
           <div className={style.awards}>
             {movie.awards.map((award) => (
               <Award
@@ -43,6 +50,7 @@ const MovieDetail = () => {
               />
             ))}
           </div>
+
           <div className={style.imageDisplay}>
             <img src={movie.secondaryImg} alt='movie' />
           </div>

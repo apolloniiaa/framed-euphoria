@@ -22,7 +22,7 @@
 }
 
 .awards {
-  min-height: 80vh;
+  min-height: 20vh;
   display: flex;
   margin: 2rem 0rem;
   align-items: center;
@@ -53,7 +53,10 @@ img {
   height: 100vh;
   object-fit: cover;
 }
-
+.galleryTitle {
+  font-family: 'Raiderfont';
+  word-spacing: 20px;
+}
 @media (max-width: 1024px) {
   .headline {
     padding-top: 27vh;
@@ -64,7 +67,7 @@ img {
 
   .awards {
     display: block;
-    padding: 0 2rem 0rem 2rem;
+    padding: 2rem 2rem 0rem 2rem;
   }
   p {
     padding: 1rem 0rem;
