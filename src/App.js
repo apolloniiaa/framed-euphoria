@@ -13,6 +13,8 @@ import Contact from './pages/ContactPage';
 import MovieDetail from './pages/MovieDetail';
 import Nav from './components/Nav';
 import FaqSection from './components/FaqSection';
+import HeroPage from './pages/HeroPage';
+
 import './App.css';
 
 function App() {
@@ -31,7 +33,8 @@ function AppContent() {
       <Nav />
 
       <Routes>
-        <Route path='/' element={<About />} />
+        <Route path='/home' element={<HeroPage />} />
+        <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/projects/:id' element={<MovieDetail />} />
         <Route path='/questions' element={<FaqSection />} />

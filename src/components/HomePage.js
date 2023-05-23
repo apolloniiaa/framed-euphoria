@@ -12,7 +12,7 @@ const HomePage = () => {
 
   return (
     <div className={style.about}>
-      <div className={style.description}>
+      <div className={`${style.description} img-container`}>
         <motion.h2
           animate={{ x: [-100, 0], opacity: [0, 1] }}
           transition={{
@@ -21,7 +21,7 @@ const HomePage = () => {
           }}
           className={style.name}
         >
-          Wedding <span className={style.span}> Photography & Films</span>
+          Photographer <span className={style.span}> & Film Maker</span>
         </motion.h2>
 
         <motion.p
@@ -32,8 +32,8 @@ const HomePage = () => {
           }}
           className={style.text}
         >
-          Szia! Jani vagyok .Ha éppen a{' '}
-          <span className={style.span}> Woodland- Captures</span> weboldalán
+          Szia! Jani vagyok. Ha éppen a{' '}
+          <span className={style.span}>Woodland-Captures</span> weboldalán
           jársz, akkor biztosan a tökéletes esküvői fotós után kutatsz. Nos,
           remélem, hogy én lehetek az, akit keresel! Az esküvői fotózás nem csak
           egy munka számomra, hanem egy szenvedély. A párok személyes stílusát
@@ -42,7 +42,7 @@ const HomePage = () => {
           mellett divatfotózásban is dolgozom. Az ott megszerzett
           tapasztalatokat, látásmódot igyekszem beleépíteni az esküvői fotókba
           is, így a végeredmény nemcsak csodálatos emlék lesz, de egyúttal igazi
-          művészeti alkotás is. Nézz körül, írj bátran ha engem szeretnél
+          művészeti alkotás is. Nézz körül, írj bátran, ha engem szeretnél
           fotósnak a nagy napra!
         </motion.p>
 
@@ -56,7 +56,7 @@ const HomePage = () => {
           Kapcsolat
         </motion.button>
       </div>
-      <div className={style.imgContainer}>
+      <div className={`${style.imgContainer} ${style.customBorderRadius}`}>
         <motion.img
           animate={{ x: [100, 0], opacity: [0, 1] }}
           transition={{
