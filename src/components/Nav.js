@@ -17,7 +17,7 @@ const Nav = () => {
       {!isMobile && (
         <h1>
           <a className={style.logo} href='#'>
-            Framed Euphoria
+            Woodland Captures
           </a>
         </h1>
       )}

@@ -21,7 +21,7 @@ const HomePage = () => {
           }}
           className={style.name}
         >
-          Anti - <span className={style.span}> Cliche</span>
+          Wedding <span className={style.span}> Photography & Films</span>
         </motion.h2>
 
         <motion.p
@@ -33,17 +33,17 @@ const HomePage = () => {
           className={style.text}
         >
           Szia! Jani vagyok .Ha éppen a{' '}
-          <span className={style.span}> Framed Euphoria</span> weboldalán jársz,
-          akkor biztosan a tökéletes esküvői fotós után kutatsz. Nos, remélem,
-          hogy én lehetek az, akit keresel! Az esküvői fotózás nem csak egy
-          munka számomra, hanem egy szenvedély. A párok személyes stílusát és
-          elképzeléseit mindig figyelembe veszem, hogy olyan képeket készítsek,
-          amelyek tökéletesen tükrözik az esküvőjüket. Esküvők mellett
-          divatfotózásban is dolgozom. Az ott megszerzett tapasztalatokat,
-          látásmódot igyekszem beleépíteni az esküvői fotókba is, így a
-          végeredmény nemcsak csodálatos emlék lesz, de egyúttal igazi művészeti
-          alkotás is. Nézz körül, írj bátran ha engem szeretnél fotósnak a nagy
-          napra!
+          <span className={style.span}> Woodland- Captures</span> weboldalán
+          jársz, akkor biztosan a tökéletes esküvői fotós után kutatsz. Nos,
+          remélem, hogy én lehetek az, akit keresel! Az esküvői fotózás nem csak
+          egy munka számomra, hanem egy szenvedély. A párok személyes stílusát
+          és elképzeléseit mindig figyelembe veszem, hogy olyan képeket
+          készítsek, amelyek tökéletesen tükrözik az esküvőjüket. Esküvők
+          mellett divatfotózásban is dolgozom. Az ott megszerzett
+          tapasztalatokat, látásmódot igyekszem beleépíteni az esküvői fotókba
+          is, így a végeredmény nemcsak csodálatos emlék lesz, de egyúttal igazi
+          művészeti alkotás is. Nézz körül, írj bátran ha engem szeretnél
+          fotósnak a nagy napra!
         </motion.p>
 
         <motion.button

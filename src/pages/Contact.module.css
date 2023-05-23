@@ -8,10 +8,7 @@ section {
 .title {
   margin: 6rem 0 2rem 0;
 }
-p {
-  color: white;
-  padding: 0.7rem;
-}
+
 h2 {
   font-size: 2rem;
   color: white;
@@ -21,11 +18,13 @@ h4 {
 }
 p {
   text-align: justify;
+  padding: 0.7rem;
+  color: #63544f;
 }
 spam {
   text-transform: uppercase;
   font-size: 3rem;
-  color: #ffffff82;
+  color: #726f52;
 }
 .data {
   display: grid;
@@ -49,7 +48,7 @@ textarea {
   border: none;
   border-bottom: 0.1rem solid green;
   width: 100%;
-  color: pink;
+  color: #313827;
   padding: 0.7rem;
 }
 &:focus {
@@ -85,7 +84,7 @@ buttom {
   transform: rotate(-180deg);
   font-size: 6rem;
   color: transparent;
-  -webkit-text-stroke: 2px white;
+  -webkit-text-stroke: 2px #726f52;
   margin-top: 2rem;
   letter-spacing: 48px;
 }

@@ -7,20 +7,20 @@
 }
 
 body {
-  background-color: #1a0b09;
-  color: #c3bebe;
+  background-color: #e9e8e1;
+  color: #313827;
 }
 button {
   font-size: 1.1rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
   background-color: transparent;
-  color: #f0efe5;
   transition: all 0.5s ease;
+  color: #948a77;
 
   &:hover {
     background-color: #f0efe5;
-    color: #311815;
+    color: #403a2e;
   }
 }
 h2 {
@@ -34,10 +34,10 @@ h2 {
     position: absolute;
     list-style: none;
     left: 0;
-    top: 11%;
+    top: 7.5%;
     width: 100%;
     z-index: 9999;
-    background: #311815;
+    background: #e9e8e1;
     height: 2000px;
     width: 100%;
   }
@@ -48,12 +48,13 @@ h2 {
   .Navigation_menuIcon__-fbrX:hover {
     color: white;
     background-color: transparent !important;
-    top: 17px;
   }
-  .hamburger-react {
-    height: 3px !important;
-  }
+
   .Navigation_line__QBN\+6 {
     display: none !important;
+  }
+  .hamburger-react {
+    height: 47px !important;
+    color: #e9e9e9 !important;
   }
 }

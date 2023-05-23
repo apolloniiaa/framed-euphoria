@@ -50,7 +50,7 @@ const ContactPage = () => {
                 <spam>Email:</spam> baloghjanos@gmail.com
               </p>
               <p>
-                <spam>Website:</spam> www.framedeuphoria.com
+                <spam>Website:</spam> www.woodlandcapture.com
               </p>
             </div>
           </div>

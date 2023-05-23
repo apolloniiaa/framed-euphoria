@@ -8,7 +8,7 @@ h2 {
 }
 .line {
   height: 0.2rem;
-  background: #f0efe5;
+  background: #c7c6ba;
   margin-bottom: 2rem;
 }
 .images {
@@ -53,8 +53,8 @@ h2 {
     margin-bottom: 0;
   }
   .images {
-    width: 255px;
-    height: 183px;
+    width: 324px;
+    height: 193px;
     object-fit: cover;
     margin-bottom: 1rem;
   }
