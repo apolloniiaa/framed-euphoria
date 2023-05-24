@@ -1,3 +1,74 @@
+import React, { useState, useEffect } from 'react';
+import { useMediaQuery } from 'react-responsive';
+import styles from './ImageSlider.module.css';
+import videoFile from '../assets/video.mp4';
+
+const ImageSlider = () => {
+  const slideshowVideos = [videoFile];
+  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const isMobileDevice = useMediaQuery({ query: '(max-width: 768px)' });
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentVideoIndex(
+        (prevIndex) => (prevIndex + 1) % slideshowVideos.length
+      );
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  const handleVideoClick = (e) => {
+    e.preventDefault();
+    e.target.play();
+  };
+
+  return (
+    <header className={styles.intro}>
+      <div className={`${styles['intro-slideshow']}`}>
+        {slideshowVideos.map((videoUrl, index) => (
+          <React.Fragment key={index}>
+            {isMobileDevice ? (
+              <video
+                src={videoUrl}
+                autoPlay
+                muted
+                loop
+                playsInline
+                style={{ opacity: index === currentVideoIndex ? 1 : 0 }}
+                className={`${styles['intro-slideshow']} ${styles['intro-slideshow-video']}`}
+                onClick={handleVideoClick}
+              />
+            ) : (
+              <video
+                src={videoUrl}
+                autoPlay
+                muted
+                loop
+                style={{ opacity: index === currentVideoIndex ? 1 : 0 }}
+                className={`${styles['intro-slideshow']} ${styles['intro-slideshow-video']}`}
+              />
+            )}
+          </React.Fragment>
+        ))}
+      </div>
+      <div className={`${styles['intro-header']}`}>
+        <p className={styles.subtitles}>[let it be amazing]</p>
+        <h1 className={`${styles['intro-h1']}`}>
+          Catch your <br /> life moment!
+        </h1>
+        <p className={styles.subtitles}>
+          Lorem ipsum dolor sit amet consectetur <br /> sit amet consectetur
+        </p>
+      </div>
+    </header>
+  );
+};
+
+export default ImageSlider;
+
 // import React, { useState, useEffect } from 'react';
 // import styles from './ImageSlider.module.css';
 
@@ -41,59 +112,3 @@
 // };
 
 // export default ImageSlider;
-import React, { useState, useEffect } from 'react';
-import styles from './ImageSlider.module.css';
-import videoFile from '../assets/video.mp4';
-
-const ImageSlider = () => {
-  const slideshowVideos = [videoFile];
-  const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentVideoIndex(
-        (prevIndex) => (prevIndex + 1) % slideshowVideos.length
-      );
-    }, 3000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  const handleVideoClick = (e) => {
-    e.preventDefault();
-    e.target.play();
-  };
-
-  return (
-    <header className={styles.intro}>
-      <div className={`${styles['intro-slideshow']}`}>
-        {slideshowVideos.map((videoUrl, index) => (
-          <video
-            key={index}
-            src={videoUrl}
-            autoPlay
-            muted
-            loop
-            playsInline
-            style={{ opacity: index === currentVideoIndex ? 1 : 0 }}
-            className={`${styles['intro-slideshow']} ${styles['intro-slideshow-video']}`}
-            onClick={handleVideoClick}
-          />
-        ))}
-      </div>
-      <div className={`${styles['intro-header']}`}>
-        <p className={styles.subtitles}>[let it be amazing]</p>
-        <h1 className={`${styles['intro-h1']}`}>
-          Catch your <br /> life moment!
-        </h1>
-        <p className={styles.subtitles}>
-          Lorem ipsum dolor sit amet consectetur <br /> sit amet consectetur
-        </p>
-      </div>
-    </header>
-  );
-};
-
-export default ImageSlider;
