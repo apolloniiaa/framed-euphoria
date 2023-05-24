@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import styles from './ImageSlider.module.css';
 import videoFileWebm from '../assets/video.webm';
@@ -8,6 +8,7 @@ const ImageSlider = () => {
   const slideshowVideos = [videoFileWebm, videoFileMp4];
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const isMobileDevice = useMediaQuery({ query: '(max-width: 768px)' });
+  const videoRef = useRef(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,16 +22,25 @@ const ImageSlider = () => {
     };
   }, []);
 
+  const handleFoladlClick = () => {
+    if (isMobileDevice && videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+
   return (
     <header className={styles.intro}>
       <div className={`${styles['intro-slideshow']}`}>
         {slideshowVideos.map((videoUrl, index) => (
           <video
             key={index}
+            ref={videoRef}
             src={videoUrl}
             autoPlay
             muted
             loop
+            playsInline
+            controls={!isMobileDevice}
             style={{ opacity: index === currentVideoIndex ? 1 : 0 }}
             className={`${styles['intro-slideshow']} ${styles['intro-slideshow-video']}`}
           />
@@ -45,6 +55,7 @@ const ImageSlider = () => {
           Lorem ipsum dolor sit amet consectetur <br /> sit amet consectetur
         </p>
       </div>
+      <button onClick={handleFoladlClick}>Főoldal</button>
     </header>
   );
 };
