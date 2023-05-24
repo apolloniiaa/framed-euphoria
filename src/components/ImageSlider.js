@@ -35,10 +35,10 @@ const ImageSlider = () => {
       <div className={`${styles['intro-slideshow']}`}>
         {slideshowVideos.map((videoUrl, index) => (
           <React.Fragment key={index}>
-            {isMobileDevice ? (
+            {isMobileDevice && isPageLoaded ? (
               <video
                 src={videoUrl}
-                autoPlay={isPageLoaded}
+                autoPlay
                 muted
                 loop
                 playsInline
@@ -49,7 +49,7 @@ const ImageSlider = () => {
             ) : (
               <video
                 src={videoUrl}
-                autoPlay
+                autoPlay={isPageLoaded}
                 muted
                 loop
                 style={{ opacity: index === currentVideoIndex ? 1 : 0 }}
