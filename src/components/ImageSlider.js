@@ -6,6 +6,7 @@ import videoFile from '../assets/video.mp4';
 const ImageSlider = () => {
   const slideshowVideos = [videoFile];
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  const [isPageLoaded, setIsPageLoaded] = useState(false);
   const isMobileDevice = useMediaQuery({ query: '(max-width: 768px)' });
 
   useEffect(() => {
@@ -18,6 +19,10 @@ const ImageSlider = () => {
     return () => {
       clearInterval(interval);
     };
+  }, []);
+
+  useEffect(() => {
+    setIsPageLoaded(true);
   }, []);
 
   const handleVideoClick = (e) => {
@@ -33,7 +38,7 @@ const ImageSlider = () => {
             {isMobileDevice ? (
               <video
                 src={videoUrl}
-                autoPlay
+                autoPlay={isPageLoaded}
                 muted
                 loop
                 playsInline
