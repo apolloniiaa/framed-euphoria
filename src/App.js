@@ -33,7 +33,7 @@ function AppContent() {
       <Nav />
 
       <Routes>
-        <Route path='/home' element={<HeroPage />} />
+        <Route path='/home' element={<HeroPage />} index />
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/projects/:id' element={<MovieDetail />} />

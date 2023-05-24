@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import styles from './ImageSlider.module.css';
-import videoFile from '../assets/video.mp4';
+import videoFileWebm from '../assets/video.webm';
+import videoFileMp4 from '../assets/video.mp4';
 
 const ImageSlider = () => {
-  const slideshowVideos = [videoFile];
+  const slideshowVideos = [videoFileWebm, videoFileMp4];
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-  const [isPageLoaded, setIsPageLoaded] = useState(false);
   const isMobileDevice = useMediaQuery({ query: '(max-width: 768px)' });
 
   useEffect(() => {
@@ -14,49 +14,26 @@ const ImageSlider = () => {
       setCurrentVideoIndex(
         (prevIndex) => (prevIndex + 1) % slideshowVideos.length
       );
-    }, 3000);
+    }, 3000); // Updated interval time to 3000 milliseconds (3 seconds)
 
     return () => {
       clearInterval(interval);
     };
   }, []);
 
-  useEffect(() => {
-    setIsPageLoaded(true);
-  }, []);
-
-  const handleVideoClick = (e) => {
-    e.preventDefault();
-    e.target.play();
-  };
-
   return (
     <header className={styles.intro}>
       <div className={`${styles['intro-slideshow']}`}>
         {slideshowVideos.map((videoUrl, index) => (
-          <React.Fragment key={index}>
-            {isMobileDevice && isPageLoaded ? (
-              <video
-                src={videoUrl}
-                autoPlay
-                muted
-                loop
-                playsInline
-                style={{ opacity: index === currentVideoIndex ? 1 : 0 }}
-                className={`${styles['intro-slideshow']} ${styles['intro-slideshow-video']}`}
-                onClick={handleVideoClick}
-              />
-            ) : (
-              <video
-                src={videoUrl}
-                autoPlay={isPageLoaded}
-                muted
-                loop
-                style={{ opacity: index === currentVideoIndex ? 1 : 0 }}
-                className={`${styles['intro-slideshow']} ${styles['intro-slideshow-video']}`}
-              />
-            )}
-          </React.Fragment>
+          <video
+            key={index}
+            src={videoUrl}
+            autoPlay
+            muted
+            loop
+            style={{ opacity: index === currentVideoIndex ? 1 : 0 }}
+            className={`${styles['intro-slideshow']} ${styles['intro-slideshow-video']}`}
+          />
         ))}
       </div>
       <div className={`${styles['intro-header']}`}>
