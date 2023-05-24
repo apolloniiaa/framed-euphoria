@@ -37,7 +37,7 @@ h2 {
     top: 7.5%;
     width: 100%;
     z-index: 9999;
-    background: #e3ddbc;
+    background: #c0c0be;
     height: 2000px;
     width: 100%;
   }
@@ -55,6 +55,6 @@ h2 {
   }
   .hamburger-react {
     height: 47px !important;
-    color: #0f5612 !important;
+    color: #ffffff !important;
   }
 }

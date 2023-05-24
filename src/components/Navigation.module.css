@@ -19,7 +19,6 @@
 }
 
 .links {
-  color: white;
   cursor: pointer;
   list-style: none;
   padding: 10px 20px;
@@ -40,6 +39,7 @@ ul {
 @media screen and (max-width: 1024px) {
   .navbar {
     padding: 2rem;
+    background: #a2a2a2;
   }
   .logo {
     font-size: 1rem;

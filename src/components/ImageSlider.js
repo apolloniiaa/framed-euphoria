@@ -55,7 +55,6 @@ const ImageSlider = () => {
           Lorem ipsum dolor sit amet consectetur <br /> sit amet consectetur
         </p>
       </div>
-      <button onClick={handleFoladlClick}>Főoldal</button>
     </header>
   );
 };

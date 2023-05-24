@@ -12,7 +12,7 @@ const Nav = () => {
   const { pathname } = useLocation();
   const [isMobile, setIsMobile] = useState(false);
 
-  const isHomePage = pathname === '/home';
+  const isHomePage = pathname === '/';
 
   const handleClick = () => {
     setIsMobile(false);
@@ -21,13 +21,13 @@ const Nav = () => {
   return (
     <nav className={style.navbar}>
       <h1>
-        <a
+        <Link
+          to='/'
           className={`${style.logo} ${isHomePage ? style.homeLogo : ''}`}
-          href='#'
           style={{ color: isHomePage ? 'white' : '#1a451c' }}
         >
           Woodland Captures
-        </a>
+        </Link>
       </h1>
       <ul
         className={isMobile ? 'nav-links-mobile' : 'nav-links'}
@@ -35,8 +35,8 @@ const Nav = () => {
       >
         <li>
           <Link
-            to='/home'
-            className={`${style.links} ${isHomePage ? style.active : ''}`}
+            to='/'
+            className={`${style.links} ${isHomePage ? '' : style.greenColor}`}
             style={{ color: isHomePage ? 'white' : '#1a451c' }}
           >
             Főoldal
@@ -45,10 +45,9 @@ const Nav = () => {
             className={style.line}
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: isHomePage ? '70%' : '0%' }}
+            animate={{ width: pathname === '/' ? '70%' : '0%' }}
           />
         </li>
-
         <li>
           <Link
             to='/about'
@@ -113,11 +112,7 @@ const Nav = () => {
           />
         </li>
       </ul>
-      <button
-        style={{ color: isHomePage ? 'white' : '#1a451c' }}
-        className={style.menuIcon}
-        onClick={() => setIsMobile(!isMobile)}
-      >
+      <button className={style.menuIcon} onClick={() => setIsMobile(!isMobile)}>
         {isMobile ? <Hamburger /> : <Hamburger />}
       </button>
     </nav>

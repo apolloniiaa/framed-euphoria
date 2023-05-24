@@ -29,13 +29,12 @@ function AppContent() {
     <div className='App'>
       <Nav />
       <Routes>
-        <Route path='/home' element={<HeroPage />} />
+        <Route path='/' element={<HeroPage />} index />
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/projects/:id' element={<MovieDetail />} />
         <Route path='/questions' element={<FaqSection />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/' element={<HeroPage />} index />
       </Routes>
     </div>
   );
