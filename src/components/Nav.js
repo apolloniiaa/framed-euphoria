@@ -24,7 +24,7 @@ const Nav = () => {
         <Link
           to='/'
           className={`${style.logo} ${isHomePage ? style.homeLogo : ''}`}
-          style={{ color: isHomePage ? 'white' : '#1a451c' }}
+          // style={{ color: isHomePage ? 'white' : '#1a451c' }}
         >
           Woodland Captures
         </Link>
@@ -37,7 +37,7 @@ const Nav = () => {
           <Link
             to='/'
             className={`${style.links} ${isHomePage ? '' : style.greenColor}`}
-            style={{ color: isHomePage ? 'white' : '#1a451c' }}
+            // style={{ color: isHomePage ? 'white' : '#1a451c' }}
           >
             Főoldal
           </Link>
@@ -52,7 +52,7 @@ const Nav = () => {
           <Link
             to='/about'
             className={`${style.links} ${isHomePage ? '' : style.greenColor}`}
-            style={{ color: isHomePage ? 'white' : '#1a451c' }}
+            // style={{ color: isHomePage ? 'white' : '#1a451c' }}
           >
             Rólam
           </Link>
@@ -68,7 +68,7 @@ const Nav = () => {
           <Link
             to='/projects'
             className={`${style.links} ${isHomePage ? '' : style.greenColor}`}
-            style={{ color: isHomePage ? 'white' : '#1a451c' }}
+            // style={{ color: isHomePage ? 'white' : '#1a451c' }}
           >
             Munkáim
           </Link>
@@ -84,7 +84,7 @@ const Nav = () => {
           <Link
             to='/questions'
             className={`${style.links} ${isHomePage ? '' : style.greenColor}`}
-            style={{ color: isHomePage ? 'white' : '#1a451c' }}
+            // style={{ color: isHomePage ? 'white' : '#1a451c' }}
           >
             QA
           </Link>
@@ -100,7 +100,7 @@ const Nav = () => {
           <Link
             to='/contact'
             className={`${style.links} ${isHomePage ? '' : style.greenColor}`}
-            style={{ color: isHomePage ? 'white' : '#1a451c' }}
+            // style={{ color: isHomePage ? 'white' : '#1a451c' }}
           >
             Kontakt
           </Link>
