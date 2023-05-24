@@ -54,12 +54,17 @@ const ImageSlider = () => {
       setCurrentVideoIndex(
         (prevIndex) => (prevIndex + 1) % slideshowVideos.length
       );
-    }, 3000); // Updated interval time to 3000 milliseconds (3 seconds)
+    }, 3000);
 
     return () => {
       clearInterval(interval);
     };
   }, []);
+
+  const handleVideoClick = (e) => {
+    e.preventDefault();
+    e.target.play();
+  };
 
   return (
     <header className={styles.intro}>
@@ -71,8 +76,10 @@ const ImageSlider = () => {
             autoPlay
             muted
             loop
+            playsInline
             style={{ opacity: index === currentVideoIndex ? 1 : 0 }}
             className={`${styles['intro-slideshow']} ${styles['intro-slideshow-video']}`}
+            onClick={handleVideoClick}
           />
         ))}
       </div>

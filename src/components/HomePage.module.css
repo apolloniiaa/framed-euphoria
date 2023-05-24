@@ -19,12 +19,8 @@
   font-family: 'Raiderfont';
   font-size: 3.5rem;
   text-transform: uppercase;
-  /* color: transparent;
-  -webkit-text-stroke: 2px white;
-  text-shadow: 11px 13px 4px #726f524d;
-  cursor: pointer; */
   text-align: left;
-  margin-right: 36rem;
+
   text-shadow: 11px 13px 4px #726f524d;
   color: #795548;
 }
@@ -62,14 +58,6 @@ button {
   color: #948a77;
 }
 
-.img {
-  transition: transform 0.3s ease;
-}
-
-.imgContainer:hover .img {
-  transform: translateZ(50px);
-}
-
 @media screen and (maxn-width: 1440px) {
   .name {
     font-size: 5rem;
@@ -90,7 +78,7 @@ button {
   .about {
     flex-direction: column;
     text-align: center;
-    padding: 2rem 2rem;
+    padding: 1rem 5rem;
   }
   .button {
     margin: 2rem 0rem 2rem 0rem;
@@ -99,7 +87,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .about {
-    padding: 3rem 1rem;
+    padding: 0rem 2rem;
   }
   .name {
     font-size: 2rem;
