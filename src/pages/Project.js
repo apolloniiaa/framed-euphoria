@@ -17,7 +17,7 @@ const Project = () => {
       <motion.div className={style.movie}>
         <motion.h2 variants={fade} className={style.subtitle}>
           {' '}
-          Eljegyzés
+          Esküvő fotózás
         </motion.h2>
         <motion.div variants={lineAnim} className={style.line}></motion.div>
         <Link to='/projects/eljegyzes'>
@@ -40,7 +40,7 @@ const Project = () => {
           delay: 3,
         }}
       >
-        <h2 className={style.subtitle}>Esküvő</h2>
+        <h2 className={style.subtitle}>Jegyes fotózás</h2>
         <div className={style.line}></div>
         <Link to='/projects/eskuvo'>
           <img className={style.images} src={img5} alt='wedding' />
@@ -55,7 +55,7 @@ const Project = () => {
           delay: 3,
         }}
       >
-        <h2 className={style.subtitle}>Párok</h2>
+        <h2 className={style.subtitle}>Páros fotózás</h2>
         <div className={style.line}></div>
         <Link to='/projects/parok'>
           <img className={style.images} src={img2} alt='wedding' />

@@ -103,7 +103,8 @@ const ImageSlider = () => {
           Catch your <br /> life moment!{' '}
         </h1>
         <p className={styles.subtitles}>
-          Lorem ipsum dolor sit amet consectetur <br /> sit amet consectetur
+          Lorem ipsum dolor sit
+          <br /> amet consectetur sit amet
         </p>
       </div>
     </header>

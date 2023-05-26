@@ -35,7 +35,7 @@ const MovieDetail = () => {
           </div>
 
           <div className={style.awards}>
-            <h2 className={style.galleryTitle}>Look Around | G A L L E R Y </h2>
+            <h2 className={style.galleryTitle}>G A L É R I A</h2>
           </div>
 
           <Gallery />

@@ -1,11 +1,13 @@
 .faq {
   margin-top: 10rem;
   padding: 0 3rem 0 3rem;
+  background-image: linear-gradient(to bottom, #e6e2d3, #321b12);
 }
 h2 {
   padding-bottom: 2rem;
-  font-size: 3rem;
-  color: #726f52;
+  font-size: 2.5rem;
+  color: whitesmoke;
+  text-shadow: 1px 1px 8px #593b30;
 }
 
 h4 {
@@ -26,7 +28,7 @@ p {
 }
 
 .faqLine {
-  background: #9e9e9e9e;
+  background: white;
   height: 0.2rem;
   margin: 2rem 0;
   width: 100%;

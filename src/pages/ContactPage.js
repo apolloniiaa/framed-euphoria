@@ -29,7 +29,7 @@ const ContactPage = () => {
         className={style.contactContent}
       >
         <div className={style.title}>
-          <h4>Kérj árajánlatot!!!</h4>
+          <h4 className={style.offer}>Kérj árajánlatot!!!</h4>
           <p>Stay in touch with me</p>
         </div>
         <div className={style.data}>

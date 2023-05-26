@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Merriweather:ital,wght@0,300;1,400&display=swap');
 .intro {
   display: flex;
   justify-content: center;
@@ -21,22 +22,29 @@
 .intro h1 {
   font-size: 4rem;
   margin-bottom: 0.75rem;
+  font-family: 'Merriweather', serif;
 }
 
 .intro p {
   font-size: 1.75rem;
+  font-family: 'Merriweather', serif;
 }
 .subtitles {
+  font-family: 'Merriweather', serif;
   font-size: 0.5rem;
-  color: white;
+  color: #5e3a2d;
 }
 .intro h1 {
   font-size: 4rem;
-  font-family: 'Raiderfont';
-  color: white;
+  font-family: 'Merriweather', serif;
+  color: #4c2c20;
   text-align: left;
+  color: #5e3a2d;
 }
 
+.intro .intro-header {
+  padding: 12rem 2.5rem;
+}
 @media (max-width: 700px) {
   html {
     font-size: 12px;

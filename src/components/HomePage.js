@@ -21,7 +21,11 @@ const HomePage = () => {
           }}
           className={style.name}
         >
-          Photographer <span className={style.span}> & Film Maker</span>
+          Photographer{' '}
+          <span className={style.span}>
+            {' '}
+            <br />& Film Maker
+          </span>
         </motion.h2>
 
         <motion.p
@@ -33,7 +37,7 @@ const HomePage = () => {
           className={style.text}
         >
           Szia! Jani vagyok .Ha éppen a{' '}
-          <span className={style.span}> Woodland- Captures</span> weboldalán
+          <span className={style.span}> Woodland Captures</span> weboldalán
           jársz, akkor biztosan a tökéletes esküvői fotós után kutatsz. Nos,
           remélem, hogy én lehetek az, akit keresel! Az esküvői fotózás nem csak
           egy munka számomra, hanem egy szenvedély. A párok személyes stílusát

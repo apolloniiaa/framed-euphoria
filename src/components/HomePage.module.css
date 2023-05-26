@@ -1,8 +1,4 @@
-@font-face {
-  font-family: 'Raiderfont';
-  src: local('Raiderfont'), url('../font/Raiderfont.ttf') format('truetype');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Merriweather:ital,wght@0,300;1,400&display=swap');
 .about {
   min-height: 100%;
   display: flex;
@@ -10,36 +6,41 @@
   position: absolute;
   top: 10%;
   left: 0%;
+  background-image: linear-gradient(to bottom, #e6e2d3, #321b12);
 }
 
 .description {
   flex: 1;
 }
 .name {
-  font-family: 'Raiderfont';
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
   font-size: 3.5rem;
   text-transform: uppercase;
   text-align: left;
-
-  text-shadow: 11px 13px 4px #726f524d;
-  color: #795548;
+  /* text-shadow: 11px 13px 4px #726f524d; */
+  color: #6e5248;
 }
 .span {
-  /* -webkit-text-stroke: 1px #1d0e08; */
-  color: #795548;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  color: #6e5248;
 }
 .subText {
   font-size: 2rem;
 }
 .nameBottom {
-  font-family: 'Raiderfont';
+  font-family: 'Cormorant SC', serif;
   font-size: 2rem;
   text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .text {
-  font-size: 1.5rem;
-  margin: 1rem 0 3rem 0;
+  font-size: 1.7rem;
+  margin: 1rem 0 2rem 0;
+  font-weight: 600;
+  color: #fffaed;
 }
 
 .imgContainer {
@@ -52,10 +53,11 @@
   object-fit: cover;
   overflow: hidden;
 }
-button {
+.button {
   border: none;
-  text-decoration: underline;
-  color: #948a77;
+  color: #fffaed;
+  font-family: 'Cormorant SC', serif;
+  font-size: 1.6rem;
 }
 
 @media screen and (maxn-width: 1440px) {
