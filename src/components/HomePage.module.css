@@ -13,17 +13,15 @@
   flex: 1;
 }
 .name {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
-  font-size: 3.5rem;
+  font-family: 'Merriweather', serif;
+  font-size: 2.7rem;
   text-transform: uppercase;
-  text-align: left;
-  /* text-shadow: 11px 13px 4px #726f524d; */
+  text-align: center;
   color: #6e5248;
 }
 .span {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
+  font-family: 'Merriweather', serif;
+
   color: #6e5248;
 }
 .subText {
@@ -39,7 +37,7 @@
 .text {
   font-size: 1.7rem;
   margin: 1rem 0 2rem 0;
-  font-weight: 600;
+  font-weight: 300;
   color: #fffaed;
 }
 
@@ -53,13 +51,66 @@
   object-fit: cover;
   overflow: hidden;
 }
-.button {
-  border: none;
-  color: #fffaed;
-  font-family: 'Cormorant SC', serif;
-  font-size: 1.6rem;
-}
 
+.button {
+  position: relative;
+  height: 50px;
+  width: 170px;
+  margin: 0 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: #3a261f;
+  color: #cdbaba;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Merriweather', serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.5s;
+  margin-bottom: 2rem;
+}
+.button:first-child:hover {
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+.button:last-child:hover {
+  background: linear-gradient(90deg, #9e9e9e, #ece1e1, #7b5f55, #3a2924);
+  background-size: 400%;
+}
+.button:first-child:before,
+.button:last-child:before {
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+  color: whitesmoke;
+}
+.button:first-child:hover:before,
+.button:last-child:hover:before {
+  opacity: 1;
+  z-index: -1;
+}
+.button:hover {
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+@keyframes glow {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
 @media screen and (maxn-width: 1440px) {
   .name {
     font-size: 5rem;

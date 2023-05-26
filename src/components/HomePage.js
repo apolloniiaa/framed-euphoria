@@ -36,18 +36,20 @@ const HomePage = () => {
           }}
           className={style.text}
         >
-          Szia! Jani vagyok .Ha éppen a{' '}
-          <span className={style.span}> Woodland Captures</span> weboldalán
-          jársz, akkor biztosan a tökéletes esküvői fotós után kutatsz. Nos,
-          remélem, hogy én lehetek az, akit keresel! Az esküvői fotózás nem csak
-          egy munka számomra, hanem egy szenvedély. A párok személyes stílusát
-          és elképzeléseit mindig figyelembe veszem, hogy olyan képeket
-          készítsek, amelyek tökéletesen tükrözik az esküvőjüket. Esküvők
-          mellett divatfotózásban is dolgozom. Az ott megszerzett
-          tapasztalatokat, látásmódot igyekszem beleépíteni az esküvői fotókba
-          is, így a végeredmény nemcsak csodálatos emlék lesz, de egyúttal igazi
-          művészeti alkotás is. Nézz körül, írj bátran ha engem szeretnél
-          fotósnak a nagy napra!
+          Sziasztok! Jani vagyok. Közel 8 éve foglalkozom fotózással. Ez idő
+          alatt szinte minden területen dolgoztam már, legyen az portré, divat,
+          ételfotózás, esküvők, enteriőr. Ezeket a tapasztalatokat mind
+          igyekszem felhasználni, és olyan fotókat készíteni, amik egyfajta
+          igazi természetességgel bírnak, egyben különlegesek is. A mai napig
+          szeretem elővenni otthon a fényképeket, lapozni az albumot. Különösen
+          jó érzés, ha a szüleimről vagy magamról, öcsémről látok fotókat. Ezek
+          igazi emlékek. Ezért is vágtam bele az esküvői fotózásba, mert
+          szeretnék valami igazit teremteni és átadni, hogy majd Ti is és
+          mindenki, aki megnézi ezeket a képeket, emlékezzenek úgy rátok,
+          amilyenek igazán vagytok. Éppen ezért fotózás közben mindig szigorúan
+          figyelek a stílusotokra, személyes jellemvonásaitokra. Ha szeretnétek,
+          hogy én kísérjelek titeket végig a nagy napon, írjatok bátran, és
+          egyeztetünk a részletekről.
         </motion.p>
 
         <motion.button
