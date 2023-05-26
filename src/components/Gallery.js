@@ -1,64 +1,17 @@
 import React, { useState } from 'react';
-import '../components/Model.css';
-import Img5 from '../assets/img/img5.jpg';
-import Img6 from '../assets/img/img6.jpg';
-import Img0 from '../assets/img/img0.jpg';
-import Img11 from '../assets/img/img11.jpg';
-import Img12 from '../assets/img/img12.jpg';
-import Img13 from '../assets/img/img13.jpg';
-import Img22 from '../assets/img/img22.jpg';
-import Img23 from '../assets/img/img23.jpg';
-import Img24 from '../assets/img/img24.jpg';
-import style from '../components/Gallery.module.css';
+import { motion } from 'framer-motion';
+import style from './Gallery.module.css';
 
-const Gallery = () => {
-  let data = [
-    {
-      id: 5,
-      imgSrc: Img5,
-    },
-    {
-      id: 6,
-      imgSrc: Img6,
-    },
-    {
-      id: 0,
-      imgSrc: Img0,
-    },
-    {
-      id: 11,
-      imgSrc: Img11,
-    },
-    {
-      id: 12,
-      imgSrc: Img12,
-    },
-    {
-      id: 13,
-      imgSrc: Img13,
-    },
-    {
-      id: 22,
-      imgSrc: Img22,
-    },
-    {
-      id: 23,
-      imgSrc: Img23,
-    },
-    {
-      id: 24,
-      imgSrc: Img24,
-    },
-  ];
-
+const Gallery = ({ images }) => {
   const [model, setModel] = useState(false);
-  const [tempimgSrc, setTempImgSrc] = useState('');
+  const [tempImgSrc, setTempImgSrc] = useState('');
+  const maxVisibleImages = 10;
+  const [visibleImages, setVisibleImages] = useState(
+    images.slice(0, maxVisibleImages)
+  );
+  const [showAllImages, setShowAllImages] = useState(false);
 
   const getImg = (imgSrc) => {
-    setTempImgSrc(imgSrc);
-    setModel(true);
-  };
-  const openModel = (imgSrc) => {
     setTempImgSrc(imgSrc);
     setModel(true);
   };
@@ -66,24 +19,49 @@ const Gallery = () => {
   const closeModel = () => {
     setModel(false);
   };
+
+  const toggleShowAllImages = () => {
+    setShowAllImages(!showAllImages);
+    if (!showAllImages) {
+      setVisibleImages(images);
+    } else {
+      setVisibleImages(images.slice(0, maxVisibleImages));
+    }
+  };
+
   return (
     <>
-      <div className={model ? 'model open' : 'model'} onClick={closeModel}>
-        <img src={tempimgSrc} />
-      </div>
+      {model && (
+        <div className={style.model} onClick={closeModel}>
+          <img src={tempImgSrc} alt='gallery' />
+        </div>
+      )}
 
       <div className={style.gallery}>
-        {data.map((item, index) => {
-          return (
-            <div
-              className={style.pics}
-              key={index}
-              onClick={() => getImg(item.imgSrc)}
-            >
-              <img src={item.imgSrc} className={style.images} />
-            </div>
-          );
-        })}
+        {visibleImages.map((item, index) => (
+          <motion.div
+            className={style.pics}
+            key={item.id}
+            onClick={() => getImg(item.imgSrc)}
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+          >
+            <img
+              src={item.imgSrc}
+              alt='gallery-image'
+              className={style.images}
+            />
+          </motion.div>
+        ))}
+        {images.length > maxVisibleImages && !showAllImages && (
+          <button
+            className={style.showMoreButton}
+            onClick={toggleShowAllImages}
+          >
+            Tovább
+          </button>
+        )}
       </div>
     </>
   );

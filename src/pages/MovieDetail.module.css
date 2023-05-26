@@ -4,16 +4,22 @@
 
 .headline {
   background-image: linear-gradient(to bottom, #e6e2d3, #321b12);
-  padding-top: 20vh;
+  padding-top: 10vh;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
+
 .movietitle {
   position: absolute;
   top: 10%;
   left: 50%;
   transform: translate(-50%, -10%);
+  text-align: center;
+}
+.tit {
+  text-align: center;
 }
 .mainImg {
   width: 100%;
@@ -62,7 +68,7 @@ img {
   /* .headline {
     padding-top: 27vh;
   } */
-  .movietitle {
+  .title {
     top: 14%;
   }
 
