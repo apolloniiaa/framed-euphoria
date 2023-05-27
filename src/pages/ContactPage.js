@@ -15,7 +15,7 @@ const ContactPage = () => {
         }}
         className={style.sideTitle}
       >
-        <h2>CONTACT</h2>
+        <h2>KONTAKT</h2>
       </motion.div>
       <div className={style.contact} />
 
@@ -58,13 +58,11 @@ const ContactPage = () => {
             <input type='text' placeholder='name' />
             <input type='email' placeholder='email' />
             <textarea placeholder='message' cols='42' rows='5'></textarea>
-            <button>Send Message</button>
+            <button>Küldés</button>
           </div>
         </div>
       </motion.div>
     </section>
-
-    ///////SLIDER
   );
 };
 

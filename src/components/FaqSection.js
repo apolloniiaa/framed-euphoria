@@ -22,42 +22,31 @@ const FaqSection = () => {
           delay: 1,
         }}
       >
-        <Toggle title='How Do I start?'>
+        <Toggle title='Első találkozás'>
           <div className={style.answer}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Obcaecati, repellendus.
+            <p className={style.answer2}>
+              Az első találkozás nagyon fontos eleme az egész fotózásnak. Minden
+              párral személyesen szoktam találkozni, hogy egy picit figyelhessem
+              őket, megismerjem őket, így könnyen elcsíphetem azokat az apró
+              vonásokat, mozdulatokat amik igazán jellemzőek rájuk.Szeretem ha
+              nem csak két ember van ott akik felkértek, hogy fotózzam le őket,
+              hanem tisztában vagyok azzal is, milyen lelkületűek, hogyan néznek
+              egymásra, hogyan viccelődnek, hiszen ezek az apró dolgok keltik
+              igazán életre a képeket, amikor megnézitek őket és felismeritek
+              azokat a pici csak a másikra jellemző apróságokat
             </p>
-            <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </Toggle>
 
-        <Toggle title='Daily Schedule'>
+        <Toggle title='Fotók stílusa,  darabszám '>
           <div className={style.answer}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Obcaecati, repellendus.
+            <p className={style.answer2}>
+              Fontos beszélgetni arról is, hogy ki mit szeret, legyen az akár
+              zene, film, könyv stb.Szeretek tudni előre az eseményen megjelenő
+              színekről, dekor elemekről, és mindent figyelembe véve úgy
+              kialakítani a beállításokat, hogy a fényelt képek tükrözzék azt a
+              hangulatot, azt a képi világot amit a pár magáénak érezhet
             </p>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </Toggle>
-
-        <Toggle title='Different Payment'>
-          <div className={style.answer}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Obcaecati, repellendus.
-            </p>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </Toggle>
-        <Toggle title='Products which I use'>
-          <div className={style.answer}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Obcaecati, repellendus.
-            </p>
-            <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </Toggle>
       </motion.div>
