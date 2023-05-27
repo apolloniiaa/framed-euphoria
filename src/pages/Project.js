@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { fade, photoAnim, lineAnim } from '../animation';
-import img4 from '../assets/img/img4.jpg';
-import img5 from '../assets/img/img5.jpg';
-import img2 from '../assets/img/img2.jpg';
+import img42 from '../assets/img/img42.jpg';
+import img29 from '../assets/img/img29.jpg';
+import img21 from '../assets/img/img21.jpg';
 import style from './Project.module.css';
 
 const Project = () => {
@@ -25,7 +25,7 @@ const Project = () => {
             <motion.img
               variants={photoAnim}
               className={style.images}
-              src={img4}
+              src={img42}
               alt='wedding'
             />
           </div>
@@ -43,7 +43,7 @@ const Project = () => {
         <h2 className={style.subtitle}>Jegyes fotózás</h2>
         <div className={style.line}></div>
         <Link to='/projects/eskuvo'>
-          <img className={style.images} src={img5} alt='wedding' />
+          <img className={style.images} src={img29} alt='wedding' />
         </Link>
       </motion.div>
 
@@ -58,7 +58,7 @@ const Project = () => {
         <h2 className={style.subtitle}>Páros fotózás</h2>
         <div className={style.line}></div>
         <Link to='/projects/parok'>
-          <img className={style.images} src={img2} alt='wedding' />
+          <img className={style.images} src={img21} alt='wedding' />
         </Link>
       </motion.div>
     </motion.div>
