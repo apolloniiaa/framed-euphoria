@@ -18,11 +18,13 @@ h4 {
   color: #63544f;
   font-family: 'Merriweather', serif;
   font-size: 2rem;
+  text-align: left;
 }
 
 p {
   padding: 1rem 0rem;
   background-color: #yellow;
+  text-align: left;
 }
 .answer {
   padding: 2rem 0rem;

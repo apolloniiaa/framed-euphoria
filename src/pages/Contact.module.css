@@ -3,14 +3,20 @@
 section {
   min-height: 100vh;
   background-image: linear-gradient(to bottom, #e6e2d3, #321b12);
+  padding: 5rem 10rem;
 }
 #contact {
   color: #fffaed;
   margin: 0 18rem;
   font-family: 'Cormorant Garamond', serif;
 }
+.form {
+  width: 450px;
+}
 .title {
-  margin: 6rem 0 2rem 0;
+  margin: 5rem 0 5rem 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
 }
 .offer {
   padding: 1rem 0rem;
@@ -20,14 +26,23 @@ h2 {
   color: #fffaed;
 }
 h4 {
-  font-size: 2.9rem;
+  font-size: 3rem;
+  text-align: center;
+}
+.subtitles {
+  text-align: left;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 p {
+  font-size: 1.4rem;
   text-align: justify;
   padding: 0.7rem;
   color: #fffaed;
+  text-align: center;
 }
-spam {
+span {
   text-transform: uppercase;
   font-size: 1.7rem;
   color: #fffaed;
@@ -46,17 +61,18 @@ spam {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   gap: 2rem;
-  margin-right: 4rem;
 }
 input,
 textarea {
   text-transform: uppercase;
   border: none;
-  border-bottom: 0.1rem solid green;
+  border-bottom: 0.1rem solid #43281e;
   width: 100%;
-  color: #313827;
+  color: #43281e;
   padding: 0.7rem;
+  margin-bottom: 1rem;
 }
 &:focus {
   outline: none;
@@ -66,15 +82,6 @@ textarea {
   height: 50%;
   resize: none;
 }
-buttom {
-  width: 100%;
-  background-color: transparent;
-  border: 0.1rem solid yellow;
-  height: 3rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: 0.5s ease-in-out;
-}
 
 .contactSection {
   display: flex;
@@ -83,24 +90,23 @@ buttom {
 
 .sideTitle {
   flex-shrink: 0;
-  width: 30%;
+  width: 20%;
 }
 
 .sideTitle h2 {
   writing-mode: vertical-rl;
   color: transparent;
-  -webkit-text-stroke: 2px #fffaed;
-  margin-left: 2rem;
+  -webkit-text-stroke: 1px #43281e;
   transform: rotate(-180deg);
-  font-size: 4rem;
-  letter-spacing: 48px;
+  font-size: 3rem;
+  letter-spacing: 70px;
   font-family: 'Merriweather', serif;
 }
 
 .contactContent {
   flex-grow: 1;
   width: 80%;
-  margin-top: -2rem;
+  margin: 5rem 4rem;
 }
 .error {
   color: red;
@@ -109,7 +115,7 @@ buttom {
 }
 
 @media screen and (min-width: 280px) and (max-width: 1080px) {
-  .contact {
+  #contact {
     margin: 1rem;
     padding: 0 1rem;
   }
@@ -118,7 +124,8 @@ buttom {
     text-align: center;
   }
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    text-align: center;
   }
   h2 {
     font-size: 1.3rem;
@@ -131,58 +138,34 @@ buttom {
     grid-template-columns: 1fr;
     margin: 0;
   }
-  p {
-    text-align: left;
-  }
 
   .sideTitle h2 {
     display: none;
   }
   .contactContent {
-    padding: 0 2rem 0 2rem;
-    width: 100%;
+    padding: 0;
+    width: auto;
   }
   .contactSection {
     display: block;
+    overflow: hidden;
   }
-  spam {
-    font-size: 1rem;
+  span {
+    font-size: 1.7rem;
   }
-  .form {
-    margin: 0 0 2rem 0;
+  .description {
+    align-items: center;
+  }
+  .subtitles {
+    font-size: 1.7rem;
   }
 }
 
-/* Intro.module.css */
-.introContainer {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.backgroundSlider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /* Add styles for the video image slider component */
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  color: #fff;
-  margin-top: 30%;
-}
-
-.title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.subtitle {
-  font-size: 24px;
+@media (max-width: 1300px) {
+  section {
+    padding: 0 1rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
 }

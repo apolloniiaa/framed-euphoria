@@ -38,7 +38,7 @@ const FaqSection = () => {
           </div>
         </Toggle>
 
-        <Toggle title='Fotók stílusa,  darabszám '>
+        <Toggle title='Fotók stílusa, darabszám '>
           <div className={style.answer}>
             <p className={style.answer2}>
               Fontos beszélgetni arról is, hogy ki mit szeret, legyen az akár

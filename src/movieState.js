@@ -125,7 +125,7 @@ export const MovieState = () => {
       title: 'Örök Pillanatok',
       mainImg: img67,
       secondaryImg: img65,
-      url: '/projects/eljegyzes',
+      url: '/projects/eskuvo',
       galleryImages: galleryImages3,
       awards: [
         {
@@ -134,7 +134,7 @@ export const MovieState = () => {
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
         {
-          title: 'Fresh look on a brutal sport.',
+          title: 'Fresh look on',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
@@ -149,7 +149,7 @@ export const MovieState = () => {
     {
       title: 'Good Times',
       mainImg: img33,
-      url: '/projects/eskuvo',
+      url: '/projects/eljegyzes',
       secondaryImg: img28,
       galleryImages: galleryImages2,
       awards: [
@@ -159,7 +159,7 @@ export const MovieState = () => {
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
         {
-          title: 'Fresh look on a brutal sport.',
+          title: 'Fresh look ',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
@@ -183,7 +183,7 @@ export const MovieState = () => {
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
         {
-          title: 'Fresh look on a brutal sport.',
+          title: 'Fresh look on ',
           description:
             '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },

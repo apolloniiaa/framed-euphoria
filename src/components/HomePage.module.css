@@ -2,7 +2,7 @@
 .about {
   min-height: 100vh;
   display: flex;
-  padding: 5rem 2rem 0 10rem;
+  padding: 5rem 10rem;
   position: absolute;
   top: 10%;
   left: 0%;
@@ -47,14 +47,9 @@
 }
 .img {
   height: 730px;
-  width: 540px;
+  width: 600px;
   object-fit: cover;
   overflow: hidden;
-}
-
-.button {
-  display: flex;
-  margin: 2rem auto;
 }
 
 @media screen and (maxn-width: 1440px) {

@@ -20,7 +20,7 @@ const Project = () => {
           Esküvő fotózás
         </motion.h2>
         <motion.div variants={lineAnim} className={style.line}></motion.div>
-        <Link to='/projects/eljegyzes'>
+        <Link to='/projects/eskuvo'>
           <div className={style.hide}>
             <motion.img
               variants={photoAnim}
@@ -42,7 +42,7 @@ const Project = () => {
       >
         <h2 className={style.subtitle}>Jegyes fotózás</h2>
         <div className={style.line}></div>
-        <Link to='/projects/eskuvo'>
+        <Link to='/projects/eljegyzes'>
           <img className={style.images} src={img29} alt='wedding' />
         </Link>
       </motion.div>

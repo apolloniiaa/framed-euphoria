@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Merriweather:ital,wght@0,300;1,400&display=swap');
+
 .gallery {
   columns: 3;
   column-gap: 1.5rem;
@@ -21,7 +23,25 @@
 .images:hover {
   filter: opacity(0.9);
 }
-
+.moreBtnContainer {
+  display: flex;
+  justify-content: center;
+}
+.showMoreButton {
+  font-size: 1.4rem;
+  outline: none;
+  border: 1px solid #43281e;
+  padding: 1rem;
+  cursor: pointer;
+  margin-top: 4rem;
+  font-family: 'Merriweather', serif;
+  color: #43281e;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+}
+.showMoreButton:hover {
+  transform: scale(1.1);
+}
 @media screen and (max-width: 1024px) {
   .gallery {
     columns: 2;

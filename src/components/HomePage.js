@@ -1,16 +1,10 @@
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
+import Button from '../components/Button';
 import style from './HomePage.module.css';
 import about from '../assets/img/about.jpg';
-import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate('/contact');
-  };
-
   return (
     <>
       <Helmet>
@@ -69,7 +63,7 @@ const HomePage = () => {
             a nagy napon, írjatok bátran, és egyeztetünk a részletekről.
           </motion.p>
 
-          <motion.button
+          {/* <motion.button
             animate={{ x: [-100, 0], opacity: [0, 1] }}
             transition={{
               duration: 1.5,
@@ -81,7 +75,8 @@ const HomePage = () => {
             onClick={handleClick}
           >
             Kapcsolat
-          </motion.button>
+          </motion.button> */}
+          <Button />
         </div>
         <div className={style.imgContainer}>
           <motion.img

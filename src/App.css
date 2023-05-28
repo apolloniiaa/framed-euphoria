@@ -19,67 +19,6 @@ h2 {
   font-size: 4rem;
 }
 
-button {
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 170px;
-  margin: 0 20px;
-  border-radius: 50px;
-  border: none;
-  outline: none;
-  background: #6e5248;
-  color: white;
-  font-size: 20px;
-  font-weight: 300;
-  font-family: 'Merriweather', serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background 0.5s;
-  margin-bottom: 2rem;
-}
-button:first-child:hover {
-  background: linear-gradient(90deg, #4e2b1e59, #a27c6e, #79554873, #795548);
-  background-size: 300%;
-}
-button:last-child:hover {
-  background: linear-gradient(90deg, #7955485c, #1c100c9e, #80675ec2, #806257);
-  background-size: 300%;
-}
-button:first-child:before,
-button:last-child:before {
-  content: '';
-  position: absolute;
-  background: inherit;
-  top: -5px;
-  right: -5px;
-  bottom: -5px;
-  left: -5px;
-  border-radius: 50px;
-  filter: blur(4px);
-  opacity: 0;
-  transition: opacity 0.5s;
-  color: whitesmoke;
-}
-button:first-child:hover:before,
-button:last-child:hover:before {
-  opacity: 1;
-  z-index: -1;
-}
-button:hover {
-  z-index: 1;
-  animation: glow 7s linear infinite;
-}
-@keyframes glow {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 400%;
-  }
-}
 @media screen and (max-width: 1024px) {
   .nav-links-mobile {
     display: block;
@@ -108,12 +47,5 @@ button:hover {
   .hamburger-react {
     height: 47px !important;
     color: #442a2a !important;
-  }
-}
-@media screen and (max-width: 767px) {
-  button {
-    height: 40px;
-    width: 137px;
-    font-size: 1rem;
   }
 }

@@ -20,6 +20,8 @@
 }
 .tit {
   text-align: center;
+  color: #43281e;
+  font-family: 'Merriweather', serif;
 }
 .mainImg {
   width: 100%;
@@ -39,17 +41,15 @@
   padding: 5rem;
 }
 h3 {
-  font-size: 2rem;
-  color: whitesmoke;
+  font-size: 1.5rem;
+  color: #43281e;
+  font-family: 'Merriweather', serif;
 }
 .line {
   width: 100%;
-  background: #a5b58e;
+  background: white;
   height: 0.5rem;
   margin: 1rem 0rem;
-}
-p {
-  padding: 2rem 0rem;
 }
 
 .imageDisplay {
@@ -61,8 +61,17 @@ img {
   object-fit: cover;
 }
 .galleryTitle {
-  font-family: 'Raiderfont';
+  font-family: 'Merriweather', serif;
   word-spacing: 20px;
+  color: #43281e;
+  text-align: center;
+}
+.description {
+  padding: 2rem 0rem;
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  color: #43281e;
+  text-align: left;
 }
 @media (max-width: 1024px) {
   /* .headline {

@@ -1,8 +1,33 @@
+import { useState } from 'react';
+import SendButton from '../components/SendButton';
+import { motion } from 'framer-motion';
 import style from './Contact.module.css';
 
-import { motion } from 'framer-motion';
-
 const ContactPage = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [isFormValid, setIsFormValid] = useState(false);
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleMessageChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Ellenőrizze a form érvényességét itt
+    const isValid = name !== '' && email !== '' && message !== '';
+    setIsFormValid(isValid);
+  };
+
   return (
     <section id='contact' className={style.contactSection}>
       <motion.div
@@ -17,7 +42,7 @@ const ContactPage = () => {
       >
         <h2>KONTAKT</h2>
       </motion.div>
-      <div className={style.contact} />
+      <div className={style.contact}></div>
 
       <motion.div
         animate={{ y: [50, 0], opacity: [0, 1] }}
@@ -28,37 +53,53 @@ const ContactPage = () => {
         }}
         className={style.contactContent}
       >
-        <div className={style.title}>
-          <h4 className={style.offer}>Kérj árajánlatot!!!</h4>
-          <p>Stay in touch with me</p>
-        </div>
         <div className={style.data}>
           <div className={style.description}>
-            <p>
+            <h4 className={style.offer}>Kérj árajánlatot</h4>
+            <p className={style.subtitles}>[Stay in touch with me]</p>
+            <p className={style.subtitles}>
               If you have any questions simply use the following contact
               details.
             </p>
-            <p>
+            <p className={style.subtitles}>
               Business Owners to take their Online Presence to the next level.
               We are in the business of Bulk SMS, Digital Marketing.
             </p>
             <div>
               <p>
-                <spam className={style.spam}>Address:</spam> Budapest,Hungary
+                <span className={style.span}>Address:</span> Budapest,Hungary
               </p>
               <p>
-                <spam>Email:</spam> baloghjanos@gmail.com
+                <span>Email:</span> baloghjanos@gmail.com
               </p>
               <p>
-                <spam>Website:</spam> www.woodlandcapture.com
+                <span>Website:</span> www.woodlandcapture.com
               </p>
             </div>
           </div>
-          <div className={style.form}>
-            <input type='text' placeholder='name' />
-            <input type='email' placeholder='email' />
-            <textarea placeholder='message' cols='42' rows='5'></textarea>
-            <button>Küldés</button>
+          <div>
+            <form className={style.form} onSubmit={handleSubmit}>
+              <input
+                type='text'
+                placeholder='name'
+                value={name}
+                onChange={handleNameChange}
+              />
+              <input
+                type='email'
+                placeholder='email'
+                value={email}
+                onChange={handleEmailChange}
+              />
+              <textarea
+                placeholder='message'
+                cols='42'
+                rows='20'
+                value={message}
+                onChange={handleMessageChange}
+              ></textarea>
+              <SendButton isFormValid={isFormValid}>Küldés</SendButton>
+            </form>
           </div>
         </div>
       </motion.div>
