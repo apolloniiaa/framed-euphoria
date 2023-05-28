@@ -27,7 +27,7 @@
   font-size: 2rem;
 }
 .nameBottom {
-  font-family: 'Cormorant SC', serif;
+  font-family: 'Merriweather', serif;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: underline;
@@ -46,7 +46,8 @@
   flex: 1;
 }
 .img {
-  height: 90vh;
+  height: 730px;
+  width: 540px;
   object-fit: cover;
   overflow: hidden;
 }
@@ -78,8 +79,8 @@
     text-align: center;
     padding: 1rem 5rem;
   }
-  .button {
-    margin: 2rem 0rem 2rem 0rem;
+  .description {
+    flex: 0;
   }
 }
 
@@ -91,11 +92,14 @@
     font-size: 2rem;
   }
   .text {
-    font-size: 1rem;
-    margin: 1rem 0 0rem 0;
+    font-size: 1.5rem;
   }
   .img {
     width: 288px;
     height: 370px;
+    margin-bottom: 2rem;
+  }
+  .description {
+    flex: 0;
   }
 }

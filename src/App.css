@@ -13,19 +13,7 @@ body {
   color: #313827;
   font-family: 'Cormorant Garamond', serif;
 }
-button {
-  font-size: 1.1rem;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  background-color: transparent;
-  transition: all 0.5s ease;
-  color: #948a77;
 
-  &:hover {
-    background-color: #f0efe5;
-    color: #403a2e;
-  }
-}
 h2 {
   font-weight: lighter;
   font-size: 4rem;
@@ -33,14 +21,16 @@ h2 {
 
 button {
   position: relative;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   width: 170px;
   margin: 0 20px;
   border-radius: 50px;
   border: none;
   outline: none;
-  background: #3a261f;
-  color: #cdbaba;
+  background: #6e5248;
+  color: white;
   font-size: 20px;
   font-weight: 300;
   font-family: 'Merriweather', serif;
@@ -51,12 +41,12 @@ button {
   margin-bottom: 2rem;
 }
 button:first-child:hover {
-  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-  background-size: 400%;
+  background: linear-gradient(90deg, #4e2b1e59, #a27c6e, #79554873, #795548);
+  background-size: 300%;
 }
 button:last-child:hover {
-  background: linear-gradient(90deg, #9e9e9e, #ece1e1, #7b5f55, #3a2924);
-  background-size: 400%;
+  background: linear-gradient(90deg, #7955485c, #1c100c9e, #80675ec2, #806257);
+  background-size: 300%;
 }
 button:first-child:before,
 button:last-child:before {
@@ -68,7 +58,7 @@ button:last-child:before {
   bottom: -5px;
   left: -5px;
   border-radius: 50px;
-  filter: blur(20px);
+  filter: blur(4px);
   opacity: 0;
   transition: opacity 0.5s;
   color: whitesmoke;
@@ -80,7 +70,7 @@ button:last-child:hover:before {
 }
 button:hover {
   z-index: 1;
-  animation: glow 8s linear infinite;
+  animation: glow 7s linear infinite;
 }
 @keyframes glow {
   0% {
@@ -118,5 +108,12 @@ button:hover {
   .hamburger-react {
     height: 47px !important;
     color: #442a2a !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  button {
+    height: 40px;
+    width: 137px;
+    font-size: 1rem;
   }
 }

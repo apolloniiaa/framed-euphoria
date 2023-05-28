@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import styles from './ImageSlider.module.css';
 
 const ImageSlider = () => {
@@ -24,7 +25,7 @@ const ImageSlider = () => {
 
   return (
     <header className={styles.intro}>
-      <div className={`${styles['intro-slideshow']}`}>
+      <motion.div className={`${styles['intro-slideshow']}`}>
         {slideshowImages.map((imageUrl, index) => (
           <img
             key={index}
@@ -34,13 +35,28 @@ const ImageSlider = () => {
             className={`${styles['intro-slideshow']} ${styles['intro-slideshow-img']}`}
           />
         ))}
-      </div>
+      </motion.div>
       <div className={`${styles['intro-header']}`}>
-        <p className={styles.subtitles}>[esküvő fotózás & videózás]</p>{' '}
-        <h1 className={`${styles['intro-h1']}`}>
+        <motion.p
+          animate={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{
+            duration: 1.5,
+          }}
+          className={styles.subtitles}
+        >
+          [esküvő fotózás & videózás]
+        </motion.p>{' '}
+        <motion.h1
+          animate={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{
+            duration: 1.5,
+            delay: 1,
+          }}
+          className={`${styles['intro-h1']}`}
+        >
           Esküvői emlékek
           <br /> örökre
-        </h1>
+        </motion.h1>
       </div>
     </header>
   );
