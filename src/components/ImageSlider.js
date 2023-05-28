@@ -6,7 +6,6 @@ const ImageSlider = () => {
     require('../assets/img/img82.jpg'),
     require('../assets/img/img73.jpg'),
     require('../assets/img/img65.jpg'),
-    require('../assets/img/img85.jpg'),
     require('../assets/img/img41.jpg'),
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -40,7 +39,7 @@ const ImageSlider = () => {
         <p className={styles.subtitles}>[esküvő fotózás & videózás]</p>{' '}
         <h1 className={`${styles['intro-h1']}`}>
           Esküvői emlékek
-          <br /> örökre{' '}
+          <br /> örökre
         </h1>
       </div>
     </header>

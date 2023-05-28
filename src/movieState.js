@@ -13,7 +13,6 @@ import img11 from './assets/img/img11.jpg';
 import img12 from './assets/img/img12.jpg';
 import img13 from './assets/img/img13.jpg';
 import img14 from './assets/img/img14.jpg';
-import img18 from './assets/img/img18.jpg';
 
 //Jegyes
 
@@ -59,7 +58,6 @@ import img65 from './assets/img/img65.jpg';
 import img66 from './assets/img/img66.jpg';
 import img67 from './assets/img/img67.jpg';
 import img68 from './assets/img/img68.jpg';
-import img72 from './assets/img/img72.jpg';
 
 export const MovieState = () => {
   const galleryImages = [
