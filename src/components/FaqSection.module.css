@@ -1,4 +1,6 @@
-.faq {
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Merriweather:ital,wght@0,300;1,400&display=swap');
+
+.faqSection {
   margin-top: 10rem;
   padding: 0 3rem 0 3rem;
   background-image: linear-gradient(to bottom, #e6e2d3, #321b12);
@@ -8,11 +10,14 @@ h2 {
   padding-bottom: 2rem;
   font-size: 2.5rem;
   color: whitesmoke;
+  font-family: 'Merriweather', serif;
 }
 
 h4 {
   padding: 2rem 0rem;
   color: #63544f;
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
 }
 
 p {
@@ -21,13 +26,7 @@ p {
 }
 .answer {
   padding: 2rem 0rem;
-}
-.answer2 {
-  padding: 2rem 0rem;
-  font-size: 1rem;
-  background-color: #yellow;
-
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .questions {
@@ -45,22 +44,28 @@ p {
   cursor: pointer;
 }
 
-@media screen and (maxn-width: 1440px) {
+@media screen and (max-width: 1440px) {
+  .faqSection {
+    margin-top: 3rem;
+  }
   h2 {
     font-size: 2rem;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .faq {
-    margin-top: 3rem;
+@media screen and (max-width: 760px) {
+  .faqSection {
     padding: 0 2rem 0 2rem;
   }
-  h2 {
+  p {
     font-size: 1.7rem;
+  }
+  h2 {
     padding-bottom: 20px;
+    font-size: 1rem;
   }
   h4 {
     padding: 1rem 0rem;
+    font-size: 1.7rem;
   }
 }

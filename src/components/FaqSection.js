@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const FaqSection = () => {
   return (
-    <div className={style.faq}>
+    <div className={style.faqSection}>
       <motion.h2
         layout
         animate={{ x: [-100, 0], opacity: [0, 1] }}
