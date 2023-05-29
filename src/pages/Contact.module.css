@@ -32,7 +32,6 @@ h4 {
 .subtitles {
   text-align: left;
   font-size: 1rem;
-  text-align: center;
   margin-bottom: 1rem;
 }
 p {
@@ -114,7 +113,7 @@ textarea {
   font-size: 0.8rem;
 }
 
-@media screen and (min-width: 280px) and (max-width: 1080px) {
+@media screen and (max-width: 1440px) {
   #contact {
     margin: 1rem;
     padding: 0 1rem;
@@ -150,7 +149,7 @@ textarea {
     display: block;
     overflow: hidden;
   }
-  span {
+  .span {
     font-size: 1.7rem;
   }
   .description {
@@ -158,14 +157,25 @@ textarea {
   }
   .subtitles {
     font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 0;
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1024px) {
   section {
-    padding: 0 1rem;
+    padding: 0;
   }
-  h4 {
-    font-size: 2rem;
+  .contactContent {
+    margin: 0;
+  }
+  .form {
+    width: 300px;
+  }
+  .contactSection {
+    padding: 0 3rem 0 3rem;
+  }
+  .span {
+    text-align: center;
   }
 }

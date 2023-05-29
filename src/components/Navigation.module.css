@@ -42,6 +42,7 @@ ul {
 @media screen and (max-width: 1024px) {
   .navbar {
     padding: 2rem;
+    background: #e6e2d3;
   }
   .logo {
     font-size: 1rem;
@@ -66,5 +67,6 @@ ul {
     border: none;
     outline: none;
     right: 17px;
+    background: transparent;
   }
 }

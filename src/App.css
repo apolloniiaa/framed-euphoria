@@ -25,12 +25,13 @@ h2 {
     position: absolute;
     list-style: none;
     left: 0;
-    top: 15.5%;
+    top: 9.5%;
     width: 100%;
     z-index: 9999;
-    background: #c0c0be;
+    background-image: linear-gradient(to bottom, #e6e2d3, #321b12);
     height: 2000px;
     width: 100%;
+    border-top: 1.5px solid #6e5248;
   }
   .nav-links {
     display: none;

@@ -33,7 +33,7 @@ const FaqSection = () => {
               hanem tisztában vagyok azzal is, milyen lelkületűek, hogyan néznek
               egymásra, hogyan viccelődnek, hiszen ezek az apró dolgok keltik
               igazán életre a képeket, amikor megnézitek őket és felismeritek
-              azokat a pici csak a másikra jellemző apróságokat
+              azokat a pici csak a másikra jellemző apróságokat.
             </p>
           </div>
         </Toggle>
@@ -45,7 +45,17 @@ const FaqSection = () => {
               zene, film, könyv stb.Szeretek tudni előre az eseményen megjelenő
               színekről, dekor elemekről, és mindent figyelembe véve úgy
               kialakítani a beállításokat, hogy a fényelt képek tükrözzék azt a
-              hangulatot, azt a képi világot amit a pár magáénak érezhet
+              hangulatot, azt a képi világot amit a pár magáénak érezhet. Fontos
+              beszélgetni arról is, hogy ki mit szeret, legyen az akár zene,
+              film, könyv stb.Szeretek tudni előre az eseményen megjelenő
+              színekről, dekor elemekről, és mindent figyelembe véve úgy
+              kialakítani a beállításokat, hogy a fényelt képek tükrözzék azt a
+              hangulatot, azt a képi világot amit a pár magáénak érezhet.Nálam
+              nincs a képekre darabszám. Az összes képet ami készül és
+              technikailag, esztétikailag rendben van, mindet fényelve,
+              szerkesztve átadom. A nap kezdetétől a végéig, minden pillanatról
+              kaptok képet. Szerintem fontos, hogy végig tudjuk nézni, kísérni
+              az egész napot pillanatról pillanatra. (Kb 1500 képet jelent)
             </p>
           </div>
         </Toggle>

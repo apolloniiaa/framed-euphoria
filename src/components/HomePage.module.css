@@ -2,7 +2,7 @@
 .about {
   min-height: 100vh;
   display: flex;
-  padding: 5rem 10rem;
+  padding: 4rem 10rem;
   position: absolute;
   top: 10%;
   left: 0%;
@@ -35,7 +35,6 @@
 
 .text {
   font-size: 1.7rem;
-  margin: 1rem 0 2rem 0;
   font-weight: 300;
   color: #fffaed;
   text-align: center;
@@ -61,10 +60,22 @@
     flex: auto;
   }
 }
-@media screen and (max-width: 1330px) {
-  .imgContainer {
-    margin-left: 0;
+
+@media screen and (max-width: 1440px) {
+  .about {
+    padding: 4rem 2rem;
   }
+  .imgContainer {
+    flex: 0;
+    margin-left: 2rem;
+  }
+  .img {
+    height: 687px;
+    width: 466px;
+  }
+}
+
+@media screen and (max-width: 1330px) {
   .name {
     font-size: 4rem;
     margin-top: 1.4rem;

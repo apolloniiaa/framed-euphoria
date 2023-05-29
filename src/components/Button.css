@@ -62,10 +62,17 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  button {
+@media screen and (max-width: 1440px) {
+  .button {
     height: 40px;
-    width: 137px;
+    width: 154px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .button {
+    height: 30px;
+    width: 127px;
     font-size: 1rem;
   }
 }
