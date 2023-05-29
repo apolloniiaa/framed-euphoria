@@ -54,9 +54,18 @@ const ImageSlider = () => {
           }}
           className={`${styles['intro-h1']}`}
         >
-          Esküvői emlékek
-          <br /> örökre
+          Esküvői emlékek örökre
         </motion.h1>
+        <motion.p
+          animate={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{
+            duration: 1.5,
+          }}
+          className={styles.subtitles}
+        >
+          {' '}
+          since 2015
+        </motion.p>
       </div>
     </header>
   );

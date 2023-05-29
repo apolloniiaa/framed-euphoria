@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Merriweather:ital,wght@0,300;1,400&display=swap');
-
 .faqSection {
   margin-top: 10rem;
   padding: 0 3rem 0 3rem;
-  background-image: linear-gradient(to bottom, #e6e2d3, #321b12);
   min-height: 90vh;
 }
 h2 {
   padding-bottom: 2rem;
   font-size: 2.5rem;
   color: whitesmoke;
-  font-family: 'Merriweather', serif;
+  font-family: 'Spectral', Sans-serif;
+  font-weight: 100;
 }
 
 h4 {
   padding: 2rem 0rem;
-  color: #63544f;
+  color: #372620;
   font-family: 'Merriweather', serif;
   font-size: 2rem;
   text-align: left;

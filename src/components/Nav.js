@@ -25,7 +25,7 @@ const Nav = () => {
           to='/'
           className={`${style.logo} ${isHomePage ? style.homeLogo : ''}`}
         >
-          Woodland Captures
+          WD
         </Link>
       </h1>
       <ul

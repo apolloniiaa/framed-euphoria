@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Merriweather:ital,wght@0,300;1,400&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@
 }
 
 body {
-  background-color: #e6e2d3;
+  background-image: linear-gradient(to top, #6a5036, #c5b6a869);
   color: #313827;
   font-family: 'Cormorant Garamond', serif;
 }
@@ -21,17 +20,16 @@ h2 {
 
 @media screen and (max-width: 1024px) {
   .nav-links-mobile {
+    background-image: linear-gradient(to top, #684f35, #d8cec4);
     display: block;
     position: absolute;
     list-style: none;
     left: 0;
-    top: 9.5%;
+    top: 82px;
     width: 100%;
     z-index: 9999;
-    background-image: linear-gradient(to bottom, #e6e2d3, #321b12);
     height: 2000px;
     width: 100%;
-    border-top: 1.5px solid #6e5248;
   }
   .nav-links {
     display: none;
@@ -48,5 +46,11 @@ h2 {
   .hamburger-react {
     height: 47px !important;
     color: #442a2a !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-links-mobile {
+    top: 62px;
   }
 }

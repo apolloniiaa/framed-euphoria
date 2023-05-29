@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Merriweather:ital,wght@0,300;1,400&display=swap');
 .about {
-  min-height: 100vh;
+  margin-top: 3rem;
   display: flex;
-  padding: 4rem 10rem;
-  position: absolute;
-  top: 10%;
-  left: 0%;
-  background-image: linear-gradient(to bottom, #e6e2d3, #321b12);
+  height: 100vh;
+  width: 100%;
 }
 
 .description {
   flex: 1;
+  height: 100%;
+  padding: 6rem;
 }
 .name {
   font-family: 'Merriweather', serif;
@@ -41,17 +40,16 @@
 }
 
 .imgContainer {
-  margin-left: 6rem;
   flex: 1;
+  /height: 100%;
 }
 .img {
-  height: 730px;
-  width: 600px;
   object-fit: cover;
-  overflow: hidden;
+  eight: 87%;
+  width: 90%;
 }
 
-@media screen and (maxn-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .name {
     font-size: 5rem;
     margin-top: 1.4rem;
@@ -59,9 +57,6 @@
   .description {
     flex: auto;
   }
-}
-
-@media screen and (max-width: 1440px) {
   .about {
     padding: 4rem 2rem;
   }
@@ -84,15 +79,20 @@
     flex-direction: column;
     text-align: center;
     padding: 1rem 5rem;
+    height: auto;
   }
   .description {
     flex: 0;
+    padding: 0;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .imgContainer {
+    margin-left: 0;
+  }
   .about {
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
   }
   .name {
     font-size: 2rem;
@@ -101,8 +101,8 @@
     font-size: 1.5rem;
   }
   .img {
-    width: 288px;
-    height: 370px;
+    width: auto;
+    height: 300px;
     margin-bottom: 2rem;
   }
   .description {

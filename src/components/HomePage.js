@@ -34,7 +34,6 @@ const HomePage = () => {
           >
             Photographer{' '}
             <span className={style.span}>
-              {' '}
               <br />& Film Maker
             </span>
           </motion.h2>
@@ -63,19 +62,6 @@ const HomePage = () => {
             a nagy napon, írjatok bátran, és egyeztetünk a részletekről.
           </motion.p>
 
-          {/* <motion.button
-            animate={{ x: [-100, 0], opacity: [0, 1] }}
-            transition={{
-              duration: 1.5,
-              delay: 1,
-            }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            className={style.button}
-            onClick={handleClick}
-          >
-            Kapcsolat
-          </motion.button> */}
           <Button />
         </div>
         <div className={style.imgContainer}>
