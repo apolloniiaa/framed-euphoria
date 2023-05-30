@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,500&family=Cormorant+SC:wght@500;600&family=Merriweather:ital,wght@0,300;1,400&display=swap');
 
 section {
-  padding: 5rem 10rem;
+  padding: 0 10rem;
   height: 100vh;
 }
 #contact {
@@ -198,7 +198,11 @@ textarea::placeholder {
     margin-bottom: 0;
   }
 }
-
+@media (max-width: 1440px){
+  section{
+    padding:0 4rem;
+  }
+}
 @media (max-width: 1024px) {
   .description {
     padding-right: 0;
@@ -239,7 +243,7 @@ textarea::placeholder {
 @media (max-width: 767px) {
   input,
   textarea {
-    width: 23rem !important;
+    width: 20rem !important;
   }
   .contactSection {
     height: auto;

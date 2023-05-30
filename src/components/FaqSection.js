@@ -1,66 +1,125 @@
+import {
+  FaInstagram,
+  FaFacebook,
+  FaEnvelope,
+  FaLinkedin,
+} from 'react-icons/fa';
 import Toggle from './Toggle';
 import style from './FaqSection.module.css';
 import { motion } from 'framer-motion';
 
 const FaqSection = () => {
   return (
-    <div className={style.faqSection}>
-      <motion.h2
-        layout
-        animate={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{
-          duration: 1.5,
-        }}
-      >
-        Gyakran feltett kérdések
-      </motion.h2>
-      <motion.div
-        layout
-        animate={{ x: [-100, 0], opacity: [0, 1] }}
-        transition={{
-          duration: 1.5,
-          delay: 1,
-        }}
-      >
-        <Toggle title='Első találkozás'>
-          <div className={style.answer}>
-            <p className={style.answer2}>
-              Az első találkozás nagyon fontos eleme az egész fotózásnak. Minden
-              párral személyesen szoktam találkozni, hogy egy picit figyelhessem
-              őket, megismerjem őket, így könnyen elcsíphetem azokat az apró
-              vonásokat, mozdulatokat amik igazán jellemzőek rájuk.Szeretem ha
-              nem csak két ember van ott akik felkértek, hogy fotózzam le őket,
-              hanem tisztában vagyok azzal is, milyen lelkületűek, hogyan néznek
-              egymásra, hogyan viccelődnek, hiszen ezek az apró dolgok keltik
-              igazán életre a képeket, amikor megnézitek őket és felismeritek
-              azokat a pici csak a másikra jellemző apróságokat.
-            </p>
-          </div>
-        </Toggle>
+    <>
+      <div className={style.faqSection}>
+        <motion.h2
+          layout
+          animate={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{
+            duration: 1.5,
+          }}
+        >
+          Gyakran feltett kérdések
+        </motion.h2>
+        <motion.div
+          layout
+          animate={{ x: [-100, 0], opacity: [0, 1] }}
+          transition={{
+            duration: 1.5,
+            delay: 1,
+          }}
+        >
+          <Toggle title='Első találkozás'>
+            <div className={style.answer}>
+              <p className={style.answer2}>
+                Az első találkozás nagyon fontos eleme az egész fotózásnak.
+                Minden párral személyesen szoktam találkozni, hogy egy picit
+                figyelhessem őket, megismerjem őket, így könnyen elcsíphetem
+                azokat az apró vonásokat, mozdulatokat amik igazán jellemzőek
+                rájuk.Szeretem ha nem csak két ember van ott akik felkértek,
+                hogy fotózzam le őket, hanem tisztában vagyok azzal is, milyen
+                lelkületűek, hogyan néznek egymásra, hogyan viccelődnek, hiszen
+                ezek az apró dolgok keltik igazán életre a képeket, amikor
+                megnézitek őket és felismeritek azokat a pici csak a másikra
+                jellemző apróságokat.
+              </p>
+            </div>
+          </Toggle>
 
-        <Toggle title='Fotók stílusa, darabszám '>
-          <div className={style.answer}>
-            <p className={style.answer2}>
-              Fontos beszélgetni arról is, hogy ki mit szeret, legyen az akár
-              zene, film, könyv stb.Szeretek tudni előre az eseményen megjelenő
-              színekről, dekor elemekről, és mindent figyelembe véve úgy
-              kialakítani a beállításokat, hogy a fényelt képek tükrözzék azt a
-              hangulatot, azt a képi világot amit a pár magáénak érezhet. Fontos
-              beszélgetni arról is, hogy ki mit szeret, legyen az akár zene,
-              film, könyv stb.Szeretek tudni előre az eseményen megjelenő
-              színekről, dekor elemekről, és mindent figyelembe véve úgy
-              kialakítani a beállításokat, hogy a fényelt képek tükrözzék azt a
-              hangulatot, azt a képi világot amit a pár magáénak érezhet.Nálam
-              nincs a képekre darabszám. Az összes képet ami készül és
-              technikailag, esztétikailag rendben van, mindet fényelve,
-              szerkesztve átadom. A nap kezdetétől a végéig, minden pillanatról
-              kaptok képet. Szerintem fontos, hogy végig tudjuk nézni, kísérni
-              az egész napot pillanatról pillanatra. (Kb 1500 képet jelent)
+          <Toggle title='Fotók stílusa, darabszám '>
+            <div className={style.answer}>
+              <p className={style.answer2}>
+                Fontos beszélgetni arról is, hogy ki mit szeret, legyen az akár
+                zene, film, könyv stb.Szeretek tudni előre az eseményen
+                megjelenő színekről, dekor elemekről, és mindent figyelembe véve
+                úgy kialakítani a beállításokat, hogy a fényelt képek tükrözzék
+                azt a hangulatot, azt a képi világot amit a pár magáénak
+                érezhet. Fontos beszélgetni arról is, hogy ki mit szeret, legyen
+                az akár zene, film, könyv stb.Szeretek tudni előre az eseményen
+                megjelenő színekről, dekor elemekről, és mindent figyelembe véve
+                úgy kialakítani a beállításokat, hogy a fényelt képek tükrözzék
+                azt a hangulatot, azt a képi világot amit a pár magáénak
+                érezhet.Nálam nincs a képekre darabszám. Az összes képet ami
+                készül és technikailag, esztétikailag rendben van, mindet
+                fényelve, szerkesztve átadom. A nap kezdetétől a végéig, minden
+                pillanatról kaptok képet. Szerintem fontos, hogy végig tudjuk
+                nézni, kísérni az egész napot pillanatról pillanatra. (Kb 1500
+                képet jelent)
+              </p>
+            </div>
+          </Toggle>
+        </motion.div>
+      </div>
+
+      <div className={style.footer}>
+        <div className={style.footerRow}>
+          <div className={style.footerContentLeft}>
+            <p className={style.quote}>
+              Capturing timeless moments that last a lifetime.Let's create your
+              special moments.
             </p>
           </div>
-        </Toggle>
-      </motion.div>
-    </div>
+          <div className={style.footerContentCenter}></div>
+          <div className={style.footerContentRight}>
+            <div className={style.footerIcons}>
+              <a
+                href='https://www.instagram.com/your-instagram-account'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaInstagram size={30} />
+              </a>
+              <a
+                href='https://www.facebook.com/your-facebook-account'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaFacebook size={30} />
+              </a>
+              <a
+                href='https://www.facebook.com/your-facebook-account'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaEnvelope size={30} />
+              </a>
+              <a
+                href='https://www.linkedin.com/your-linkedin-account'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <FaLinkedin size={30} />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className={style.footerRow}>
+          <div className={style.footerCopyright}>
+            &copy; 2023 Woodland Photography. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 

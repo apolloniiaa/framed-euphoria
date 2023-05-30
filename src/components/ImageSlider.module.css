@@ -46,7 +46,7 @@
 }
 
 .intro .intro-header {
-  padding: 48rem 2.5rem;
+  padding: 30rem 2.5rem;
 }
 
 @media (max-width: 700px) {
@@ -62,6 +62,6 @@
   }
   .intro .intro-header {
     padding: 0 2rem;
-    margin-top: 330px;
+    margin-top: 275px;
   }
 }

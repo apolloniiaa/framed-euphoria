@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
+import InstaCarousel from './InstaCarousel';
 import Button from '../components/Button';
 import style from './HomePage.module.css';
 import about from '../assets/img/about.jpg';
@@ -77,6 +78,7 @@ const HomePage = () => {
           />
         </div>
       </div>
+      <InstaCarousel />
     </>
   );
 };
