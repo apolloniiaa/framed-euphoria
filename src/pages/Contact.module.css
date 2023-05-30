@@ -185,7 +185,6 @@ textarea::placeholder {
   }
   .contactSection {
     display: block;
-    overflow: hidden;
   }
   .span {
     font-size: 1.7rem;
@@ -208,6 +207,7 @@ textarea::placeholder {
   .data {
     width: auto;
     left: 0;
+    margin: 0;
   }
   section {
     padding: 0;
@@ -238,8 +238,8 @@ textarea::placeholder {
   }
 }
 @media (max-width: 767px) {
-  .data {
-    margin: 0 4rem 0 4rem;
+  .contactSection {
+    height: auto;
   }
   .description {
     margin-bottom: 3rem;
@@ -248,12 +248,15 @@ textarea::placeholder {
     display: none;
   }
   .data {
-    background: transparent;
     box-shadow: none;
     border-radius: 0;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
     border: none;
     position: static;
+    margin: 0;
+  }
+  .subtitles {
+    text-align: left;
   }
 }

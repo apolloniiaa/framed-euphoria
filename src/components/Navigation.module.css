@@ -42,6 +42,7 @@ ul {
 @media screen and (max-width: 1024px) {
   .navbar {
     padding: 2rem;
+    background-image: linear-gradient(to bottom, #f4e3d3, #c5b6a8);
   }
   .logo {
     font-size: 1rem;
