@@ -4,6 +4,7 @@ import InstaCarousel from './InstaCarousel';
 import Button from '../components/Button';
 import style from './HomePage.module.css';
 import about from '../assets/img/about.jpg';
+import BlockQuote from './BlockQuote';
 
 const HomePage = () => {
   return (
@@ -78,6 +79,7 @@ const HomePage = () => {
           />
         </div>
       </div>
+      <BlockQuote />
       <InstaCarousel />
     </>
   );

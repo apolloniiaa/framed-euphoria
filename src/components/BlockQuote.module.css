@@ -1,0 +1,58 @@
+.review {
+  color: white;
+  box-shadow: grey;
+  padding: 0 7rem 0 7rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text {
+  margin-bottom: 2rem;
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  width: 75%;
+  padding: 3rem;
+}
+.review:before {
+  content: '\201C';
+  position: absolute;
+  bottom: 3.25rem;
+  left: 18rem;
+  line-height: 1;
+  font-size: 9rem;
+  color: white;
+  font-family: cursive;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .review {
+    padding: 0 1rem 0 1rem;
+  }
+  .review:before {
+    bottom: 8.25rem;
+    left: 3rem;
+    font-size: 6rem;
+  }
+  .text {
+    padding: 5rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .review {
+    padding: 0 1rem 0 1rem;
+  }
+  .review:before {
+    bottom: 10.25rem;
+    left: 2.28rem;
+    font-size: 5rem;
+  }
+  .text {
+    padding: 2rem;
+  }
+}

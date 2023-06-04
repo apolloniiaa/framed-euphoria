@@ -45,9 +45,9 @@
   color: white;
 }
 
-.intro .intro-header {
+/* .intro .intro-header {
   padding: 30rem 2.5rem;
-}
+} */
 
 @media (max-width: 700px) {
   html {
