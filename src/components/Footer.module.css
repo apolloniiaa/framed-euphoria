@@ -1,7 +1,6 @@
 .footer {
   position: relative;
   background: white;
-  padding: 2rem;
 }
 .footer {
   position: relative;
@@ -14,48 +13,30 @@
   background: #d8d2d2;
 }
 
-.footerRow {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.footerContentLeft {
-  color: brown;
-  width: 20rem;
-}
-
-.footerContentCenter {
-  text-align: center;
-}
-
-.quote {
-  color: brown;
-}
-
 .footerIcons {
   display: flex;
-  justify-content: space-between;
-  width: 100px;
-
-  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  gap: 7rem;
 }
 
-.footerWD {
-  text-align: center;
-  font-weight: bold;
-}
 svg {
   color: #d8d2d2;
-}
-
-.footerCenter {
-  text-align: center;
 }
 
 .footerCopyright {
   margin: 0 auto;
   font-size: 0.7rem;
   color: #35251f;
+}
+@media screen and (max-width: 1024px) {
+  .footerIcons {
+    gap: 4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footerIcons {
+    gap: 2rem;
+  }
 }

@@ -43,7 +43,7 @@ blockContainer {
     font-size: 6rem;
   }
   .text {
-    padding: 5rem;
+    padding: 1rem;
   }
 }
 
@@ -57,7 +57,7 @@ blockContainer {
     font-size: 3rem;
   }
   .text {
-    padding: 1rem;
+    padding: 0;
     width: 80%;
   }
 }
