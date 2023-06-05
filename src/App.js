@@ -12,6 +12,7 @@ import MovieDetail from './pages/MovieDetail';
 import Nav from './components/Nav';
 import FaqSection from './components/FaqSection';
 import HeroPage from './pages/HeroPage';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -25,17 +26,21 @@ function App() {
 function AppContent() {
   const location = useLocation();
   console.log(location);
+
+  const isHomepage = location.pathname === '/';
+
   return (
     <div className='App'>
       <Nav />
       <Routes>
-        <Route path='/' element={<HeroPage />} index />
+        <Route path='/' element={<HeroPage />} />
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/projects/:id' element={<MovieDetail />} />
         <Route path='/questions' element={<FaqSection />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+      {!isHomepage && <Footer />}
     </div>
   );
 }

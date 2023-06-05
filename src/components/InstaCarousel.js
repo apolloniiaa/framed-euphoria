@@ -30,7 +30,6 @@ const InstaCarousel = () => {
         'https://images.pexels.com/photos/4119625/pexels-photo-4119625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       description: 'Dota 2 is a multiplayer online battle arena by Valve...',
     },
-   
   ];
   const handleItemClick = (index) => {
     setActiveIndex(index);
@@ -41,12 +40,12 @@ const InstaCarousel = () => {
       <h2 className='line-title'>
         Follow me on Instagram{' '}
         <a
-          href='https://www.instagram.com/your_instagram_account/'
+          href='https://www.instagram.com/balogh.janos.photoblog/'
           target='_blank'
           rel='noopener noreferrer'
           className='instagram-link'
         >
-   <FaInstagram className='instagram-icon' />
+          <FaInstagram className='instagram-icon' />
         </a>
       </h2>
       <div className='custom-carousel'>

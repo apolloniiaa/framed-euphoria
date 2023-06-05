@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const BlockQuote = () => {
   return (
-    <div>
+    <div className={styles.blockContainer}>
       <figure className={styles.review}>
         <motion.blockquote
           animate={{ x: [-100, 0], opacity: [0, 1] }}

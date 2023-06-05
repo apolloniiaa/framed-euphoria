@@ -1,3 +1,6 @@
+blockContainer {
+  height: 50vh;
+}
 .review {
   color: white;
   box-shadow: grey;
@@ -14,13 +17,15 @@
   font-size: 2rem;
   text-align: center;
   width: 75%;
-  padding: 3rem;
+  padding: 7rem;
 }
 .review:before {
   content: '\201C';
   position: absolute;
-  bottom: 3.25rem;
-  left: 18rem;
+  bottom: 32%;
+  left: 20%;
+  transform: translateX(-50%);
+  font-size: 6rem;
   line-height: 1;
   font-size: 9rem;
   color: white;
@@ -28,18 +33,17 @@
   z-index: 1;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .review {
     padding: 0 1rem 0 1rem;
   }
   .review:before {
-    bottom: 8.25rem;
-    left: 3rem;
+    bottom: 41%;
+    left: 7%;
     font-size: 6rem;
   }
   .text {
     padding: 5rem;
-    width: auto;
   }
 }
 
@@ -48,11 +52,12 @@
     padding: 0 1rem 0 1rem;
   }
   .review:before {
-    bottom: 10.25rem;
-    left: 2.28rem;
-    font-size: 5rem;
+    bottom: 80%;
+    left: 13%;
+    font-size: 3rem;
   }
   .text {
-    padding: 2rem;
+    padding: 1rem;
+    width: 80%;
   }
 }
