@@ -43,10 +43,6 @@ const MovieDetail = () => {
             />
           ))}
         </div>
-
-        {/* <div className={style.imageDisplay}>
-          <img src={movie.secondaryImg} alt='movie' />
-        </div> */}
       </div>
     </>
   );

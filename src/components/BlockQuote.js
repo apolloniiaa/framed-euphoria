@@ -13,8 +13,8 @@ const BlockQuote = () => {
           }}
           className={styles.text}
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ab
-          quod iure aperiam! Quisquam unde quo ipsum ipsa.
+          A fényképészet a csend művészete, ahol a szavak helyett a pillanatok
+          beszélnek.
         </motion.blockquote>
       </figure>
     </div>

@@ -198,9 +198,9 @@ textarea::placeholder {
     margin-bottom: 0;
   }
 }
-@media (max-width: 1440px){
-  section{
-    padding:0 4rem;
+@media (max-width: 1440px) {
+  section {
+    padding: 0 4rem;
   }
 }
 @media (max-width: 1024px) {
@@ -233,7 +233,7 @@ textarea::placeholder {
     margin: 2rem;
   }
   .info {
-    text-align: left !important;
+    text-align: center !important;
   }
   input,
   textarea {
@@ -241,9 +241,12 @@ textarea::placeholder {
   }
 }
 @media (max-width: 767px) {
+  .offer {
+    text-align: center;
+  }
   input,
   textarea {
-    width: 20rem !important;
+    width: 18rem !important;
   }
   .contactSection {
     height: auto;
@@ -266,6 +269,6 @@ textarea::placeholder {
     background: transparent;
   }
   .subtitles {
-    text-align: left;
+    text-align: center;
   }
 }

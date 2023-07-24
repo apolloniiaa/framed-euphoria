@@ -12,18 +12,17 @@ blockContainer {
   align-items: center;
 }
 .text {
-  margin-bottom: 2rem;
+  margin: 15rem;
   position: relative;
   font-size: 2rem;
   text-align: center;
   width: 75%;
-  padding: 7rem;
 }
 .review:before {
   content: '\201C';
   position: absolute;
-  bottom: 32%;
-  left: 20%;
+  bottom: 38%;
+  left: 16%;
   transform: translateX(-50%);
   font-size: 6rem;
   line-height: 1;

@@ -5,6 +5,9 @@
   text-align: center;
   letter-spacing: 0.1rem;
 }
+.title {
+  margin-top: 45rem;
+}
 
 .intro-slideshow img {
   position: absolute;
@@ -45,23 +48,44 @@
   color: white;
 }
 
-/* .intro .intro-header {
-  padding: 30rem 2.5rem;
-} */
-
 @media (max-width: 700px) {
   html {
     font-size: 12px;
   }
+  .intro-background {
+    display: none;
+    background-image: url('../assets/img/img23-sm.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
   .intro h1 {
     font-size: 2.3rem;
   }
-
+  .intro {
+    display: block;
+  }
   .intro p {
     font-size: 1rem;
   }
   .intro .intro-header {
-    padding: 0 2rem;
-    margin-top: 275px;
+    padding: 24rem 0rem;
+    margin-top: 0;
+  }
+  .intro-slideshow {
+    display: none;
+  }
+  .intro-background {
+    display: block;
+  }
+  .title {
+    box-shadow: 0 8px 32px 0 rgb(158 75 44 / 39%);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(4px);
+    width: auto;
+    background: #cb927e36;
+    margin-top: 0;
   }
 }

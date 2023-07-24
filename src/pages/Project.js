@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { fade, photoAnim, lineAnim } from '../animation';
-// import img42 from '../assets/img/img42.jpg';
-// import img29 from '../assets/img/img29.jpg';
-import img21 from '../assets/img/img21.jpg';
+import img21 from '../assets/img/wedding-banner.jpg';
+import img22 from '../assets/img/paros-banner.jpg';
+import img23 from '../assets/img/jegyes-banner.jpg';
 import style from './Project.module.css';
 
 const Project = () => {
@@ -46,7 +46,7 @@ const Project = () => {
           <motion.img
             variants={photoAnim}
             className={style.images}
-            src={img21}
+            src={img23}
             alt='jegyes'
           />
         </Link>
@@ -66,7 +66,7 @@ const Project = () => {
           <motion.img
             variants={photoAnim}
             className={style.images}
-            src={img21}
+            src={img22}
             alt='paros'
           />
         </Link>

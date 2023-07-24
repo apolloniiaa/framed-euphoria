@@ -62,6 +62,43 @@ const FaqSection = () => {
               </p>
             </div>
           </Toggle>
+
+          <Toggle title='Hol vállalsz fotózásokat?'>
+            <div className={style.answer}>
+              <p className={style.answer2}>
+                Az ország bármely pontján vállalok esküvő, jegyes és páros
+                fotózásokat.
+              </p>
+            </div>
+          </Toggle>
+
+          <Toggle title='Hogyan tudok időpontot kérni?'>
+            <div className={style.answer}>
+              <p className={style.answer2}>
+                A kontakt menüpont alatt, a felugró kis panelt kitöltve tudsz
+                időpontot illetve árajánlatot kérni.
+              </p>
+            </div>
+          </Toggle>
+
+          <Toggle title='Egyedül vagy csapatban dolgozol?'>
+            <div className={style.answer}>
+              <p className={style.answer2}>
+                Általában egyedül, de ha igényeltek több fős csapatot pl. plusz
+                fotós, sminkes, fodrász akkor vannak megbízható kollégáim
+                akikkel már összeszokottan, csapatként dolgozunk együtt.
+              </p>
+            </div>
+          </Toggle>
+
+          <Toggle title='Esküvőkön kívül fotózol mást is?'>
+            <div className={style.answer}>
+              <p className={style.answer2}>
+                Igen, az esküvőkön kívül, kereshettek még portré, divat, termék,
+                ételfotózással kapcsolatban is.
+              </p>
+            </div>
+          </Toggle>
         </motion.div>
       </div>
     </>

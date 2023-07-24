@@ -6,8 +6,6 @@ const ImageSlider = () => {
   const slideshowImages = [
     require('../assets/img/img82.jpg'),
     require('../assets/img/img73.jpg'),
-    require('../assets/img/img65.jpg'),
-    require('../assets/img/img41.jpg'),
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -36,36 +34,40 @@ const ImageSlider = () => {
           />
         ))}
       </motion.div>
-      <div className={`${styles['intro-header']}`}>
-        <motion.p
-          animate={{ x: [-100, 0], opacity: [0, 1] }}
-          transition={{
-            duration: 1.5,
-          }}
-          className={styles.subtitles}
-        >
-          [esküvő fotózás & videózás]
-        </motion.p>{' '}
-        <motion.h1
-          animate={{ x: [-100, 0], opacity: [0, 1] }}
-          transition={{
-            duration: 1.5,
-            delay: 1,
-          }}
-          className={`${styles['intro-h1']}`}
-        >
-          Esküvői emlékek örökre
-        </motion.h1>
-        <motion.p
-          animate={{ x: [-100, 0], opacity: [0, 1] }}
-          transition={{
-            duration: 1.5,
-          }}
-          className={styles.subtitles}
-        >
-          {' '}
-          since 2015
-        </motion.p>
+
+      <div
+        className={`${styles['intro-header']} ${styles['intro-background']}`}
+      >
+        <motion.div className={styles.title}>
+          <motion.p
+            animate={{ x: [-100, 0], opacity: [0, 1] }}
+            transition={{
+              duration: 1.5,
+            }}
+            className={styles.subtitles}
+          >
+            [esküvő fotózás & videózás]
+          </motion.p>
+          <motion.h1
+            animate={{ x: [-100, 0], opacity: [0, 1] }}
+            transition={{
+              duration: 1.5,
+              delay: 1,
+            }}
+            className={`${styles['intro-h1']}`}
+          >
+            Esküvői emlékek örökre
+          </motion.h1>
+          <motion.p
+            animate={{ x: [-100, 0], opacity: [0, 1] }}
+            transition={{
+              duration: 1.5,
+            }}
+            className={styles.subtitles}
+          >
+            since 2015
+          </motion.p>
+        </motion.div>
       </div>
     </header>
   );
