@@ -13,8 +13,8 @@ const BlockQuote = () => {
           }}
           className={styles.text}
         >
-          A fényképészet a csend művészete, ahol a szavak helyett a pillanatok
-          beszélnek.
+          " A fényképészet a csend művészete, ahol a szavak helyett a pillanatok
+          beszélnek. "
         </motion.blockquote>
       </figure>
     </div>

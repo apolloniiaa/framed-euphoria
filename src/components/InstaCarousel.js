@@ -2,35 +2,33 @@ import React, { useState } from 'react';
 import { FaInstagram } from 'react-icons/fa';
 import './InstaCarousel.css';
 
+import image1 from '../assets/img/intsa1.jpg';
+import image2 from '../assets/img/insta2.jpg';
+import image3 from '../assets/img/insta3.jpg';
+import image4 from '../assets/img/insta4.jpg';
+
 const InstaCarousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const games = [
     {
-      title: 'Dota 2',
-      backgroundImage:
-        'https://images.pexels.com/photos/3014856/pexels-photo-3014856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      backgroundImage: image1,
       description: 'Lorem..',
     },
     {
-      title: 'Dota 2',
-      backgroundImage:
-        'https://images.pexels.com/photos/3014859/pexels-photo-3014859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      backgroundImage: image2,
       description: 'Dota 2 is a multiplayer online battle arena by Valve...',
     },
     {
-      title: 'Dota 2',
-      backgroundImage:
-        'https://images.pexels.com/photos/2691787/pexels-photo-2691787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      backgroundImage: image3,
       description: 'Dota 2 is a multiplayer online battle arena by Valve...',
     },
     {
-      title: 'Dota 2',
-      backgroundImage:
-        'https://images.pexels.com/photos/4119625/pexels-photo-4119625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      backgroundImage: image4,
       description: 'Dota 2 is a multiplayer online battle arena by Valve...',
     },
   ];
+
   const handleItemClick = (index) => {
     setActiveIndex(index);
   };
@@ -38,7 +36,7 @@ const InstaCarousel = () => {
   return (
     <section className='game-section'>
       <h2 className='line-title'>
-        Follow me on Instagram{' '}
+        Kövess Instagramon is
         <a
           href='https://www.instagram.com/balogh.janos.photoblog/'
           target='_blank'
@@ -53,7 +51,11 @@ const InstaCarousel = () => {
           <div
             className={`item ${index === activeIndex ? 'active' : ''}`}
             key={index}
-            style={{ backgroundImage: `url(${game.backgroundImage})` }}
+            style={{
+              backgroundImage: `url(${game.backgroundImage})`,
+              backgroundSize: 'cover', // Ensure the image covers the entire item
+              backgroundPosition: 'center', // Center the image
+            }}
             onClick={() => handleItemClick(index)}
           >
             <div className='item-desc'>

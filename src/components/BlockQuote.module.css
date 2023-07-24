@@ -1,62 +1,28 @@
 blockContainer {
   height: 50vh;
 }
-.review {
-  color: white;
-  box-shadow: grey;
-  padding: 0 7rem 0 7rem;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .text {
   margin: 15rem;
   position: relative;
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
   width: 75%;
-}
-.review:before {
-  content: '\201C';
-  position: absolute;
-  bottom: 38%;
-  left: 16%;
-  transform: translateX(-50%);
-  font-size: 6rem;
-  line-height: 1;
-  font-size: 9rem;
-  color: white;
-  font-family: cursive;
-  z-index: 1;
+  color: #6e5248;
 }
 
 @media screen and (max-width: 1024px) {
-  .review {
-    padding: 0 1rem 0 1rem;
-  }
-  .review:before {
-    bottom: 41%;
-    left: 7%;
-    font-size: 6rem;
-  }
   .text {
-    padding: 1rem;
+    padding: 2rem;
+    font-size: 2rem;
+    margin: 0;
   }
 }
 
 @media (max-width: 767px) {
-  .review {
-    padding: 0 1rem 0 1rem;
-  }
-  .review:before {
-    bottom: 80%;
-    left: 13%;
-    font-size: 3rem;
-  }
   .text {
-    padding: 0;
-    width: 80%;
+    width: auto;
+    background: #f2f2f27a;
+    padding: 2rem;
   }
 }

@@ -5,7 +5,7 @@ import styles from './ImageSlider.module.css';
 const ImageSlider = () => {
   const slideshowImages = [
     require('../assets/img/img82.jpg'),
-    require('../assets/img/img73.jpg'),
+    require('../assets/img/img41.jpg'),
   ];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
