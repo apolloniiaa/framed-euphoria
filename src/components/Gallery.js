@@ -93,5 +93,4 @@ const Gallery = ({ images }) => {
     </>
   );
 };
-
 export default Gallery;

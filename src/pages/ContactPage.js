@@ -68,7 +68,7 @@ const ContactPage = () => {
               >
                 <input
                   type='text'
-                  placeholder='Írd be a neved'
+                  placeholder='Név'
                   value={name}
                   onChange={handleNameChange}
                   name='name'
@@ -77,14 +77,14 @@ const ContactPage = () => {
 
                 <input
                   type='text'
-                  placeholder='Írd be az email címed'
+                  placeholder='Email cím'
                   value={email}
                   onChange={handleEmailChange}
                   name='email'
                   style={{ width: '450px', height: '86px' }}
                 />
                 <textarea
-                  placeholder='Hagyj üzenetet'
+                  placeholder='Üzenet'
                   cols='40'
                   rows='10'
                   value={message}
