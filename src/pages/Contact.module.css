@@ -24,7 +24,7 @@ section {
 }
 .headerImg {
   width: 100%;
-  height: 50vh;
+  min-height: 50vh;
   object-fit: cover;
   position: relative;
 }
@@ -269,6 +269,7 @@ textarea::placeholder {
     border: none;
     position: static;
     margin: 0;
+    padding: 2rem;
     background: transparent;
   }
   .subtitles {
