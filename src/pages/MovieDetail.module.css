@@ -21,6 +21,7 @@
   text-align: center;
   color: #43281e;
   font-family: 'Merriweather', serif;
+  font-size: 2rem;
 }
 .mainImg {
   width: 100%;
@@ -73,16 +74,16 @@ img {
   text-align: left;
 }
 @media (max-width: 1024px) {
-  /* .headline {
-    padding-top: 27vh;
-  } */
   .title {
     top: 14%;
+  }
+  .headline {
+    padding-top: 2vh;
   }
 
   .awards {
     display: block;
-    padding: 2rem 2rem 0rem 2rem;
+    padding: 0 2rem 0rem 2rem;
   }
   p {
     padding: 1rem 0rem;
@@ -93,10 +94,16 @@ img {
     width: 100%;
     height: 70vh;
   }
+  .awards {
+    min-height: 0;
+  }
 }
 @media (max-width: 780px) {
   .awardStyle {
     padding: 1rem;
+  }
+  .galleryTitle {
+    font-size: 1.7rem;
   }
   p {
     padding: 1rem 0rem;
@@ -108,5 +115,11 @@ img {
   img,
   .mainImg {
     height: 300px;
+  }
+  .tit {
+    font-size: 1.7rem;
+  }
+  .headline {
+    padding-top: 3vh;
   }
 }

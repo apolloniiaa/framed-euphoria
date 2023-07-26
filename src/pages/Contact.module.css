@@ -2,7 +2,7 @@
 
 section {
   padding: 0 10rem;
-  height: 100vh;
+  height: 65vh;
 }
 #contact {
   color: #fffaed;
@@ -19,6 +19,8 @@ section {
   padding: 1rem 0rem;
   font-family: 'Spectral', Sans-serif;
   color: #fffaed;
+  text-transform: uppercase;
+  text-align: center;
 }
 .headerImg {
   width: 100%;
@@ -31,7 +33,7 @@ section {
   grid-template-columns: 1fr 1fr;
   gap: 0rem;
   position: absolute;
-  top: 38%;
+  top: 30%;
   left: 27%;
   background: rgb(46 25 17 / 19%);
   box-shadow: 0 8px 32px 0 rgb(245 245 245 / 11%);
@@ -52,8 +54,9 @@ h4 {
 }
 .subtitles {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 p {
   font-size: 1.4rem;

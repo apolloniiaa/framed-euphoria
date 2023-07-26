@@ -3,7 +3,7 @@ blockContainer {
 }
 
 .text {
-  margin: 15rem;
+  margin: 10rem auto;
   position: relative;
   font-size: 4rem;
   text-align: center;
@@ -13,9 +13,8 @@ blockContainer {
 
 @media screen and (max-width: 1024px) {
   .text {
-    padding: 2rem;
     font-size: 2rem;
-    margin: 0;
+    margin: 2rem auto;
   }
 }
 
@@ -24,5 +23,6 @@ blockContainer {
     width: auto;
     background: #f2f2f27a;
     padding: 2rem;
+    margin: 0 auto;
   }
 }

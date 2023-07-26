@@ -76,7 +76,7 @@ export const MovieState = () => {
     },
 
     {
-      title: 'jegyes',
+      title: 'Jegyes fotózás varázsa',
       mainImg: img2,
       url: '/projects/eljegyzes',
       secondaryImg: img1,
@@ -100,7 +100,7 @@ export const MovieState = () => {
       ],
     },
     {
-      title: 'Párok',
+      title: 'Páros fotók a boldog pillanatokról',
       mainImg: img26,
       galleryImages: galleryImages,
       url: '/projects/parok',

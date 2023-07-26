@@ -40,23 +40,26 @@ const ContactPage = () => {
             className={style.data}
           >
             <div className={style.description}>
-              <h4 className={style.offer}>PRECIOUS MEMORIES FOREVER</h4>
+              <h4 className={style.offer}>Felbecsülhetetlen emlékek örökre</h4>
               <p className={style.subtitles}>
-                {' '}
-                I am here to help you to remember the best days. Business Owners
-                to take their Online Presence to the next level.Online Presence
-                to the next level.
+                Itt vagyok, hogy segítsek megőrizni és örök emlékké varázsolni
+                az élet legszebb napjait. Legyen az esküvő, családi ünnepség
+                vagy egy fontos mérföldkő, a célom, hogy örökre megőrizzem a
+                boldogságot és szeretetet az emlékekben. Fotóimmal és
+                tapasztalatommal gondoskodom arról, hogy minden pillanatot
+                átélhessetek újra és újra, és felidézhessétek az érzelmeiteket
+                akár évek múltán is.
               </p>
 
               <div>
                 <p className={style.info}>
-                  <span className={style.span}>Address:</span> Budapest,Hungary
+                  <span className={style.span}>Cím:</span> Budapest,Hungary
                 </p>
                 <p className={style.info}>
-                  <span>Email:</span> baloghjanos@gmail.com
+                  <span>Email:</span> baloghjanos1011@gmail.com
                 </p>
                 <p className={style.info}>
-                  <span>Website:</span> www.woodlandcapture.com
+                  <span>Weboldal:</span> www.woodlandcapture.com
                 </p>
               </div>
             </div>

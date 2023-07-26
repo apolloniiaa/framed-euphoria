@@ -6,7 +6,7 @@
   letter-spacing: 0.1rem;
 }
 .title {
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 .intro-slideshow img {
@@ -54,7 +54,7 @@
   }
   .intro-background {
     display: none;
-    background-image: url('../assets/img/img23-sm.jpg');
+    background-image: url('../assets/img/img27-sm.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,11 +81,10 @@
     display: block;
   }
   .title {
-    box-shadow: 0 8px 32px 0 rgb(158 75 44 / 39%);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(4px);
     width: auto;
-    background: #cb927e36;
+    background: #c5b6a863;
     margin-top: 0;
   }
 }

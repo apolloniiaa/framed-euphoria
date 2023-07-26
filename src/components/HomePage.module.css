@@ -30,6 +30,13 @@
   text-transform: uppercase;
   text-decoration: underline;
 }
+.img {
+  object-fit: cover;
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+}
 
 .text {
   font-size: 1.7rem;
@@ -42,13 +49,7 @@
   flex: 1;
   /height: 100%;
 }
-.img {
-  object-fit: cover;
-  height: 100%;
-  width: 57%;
-  margin: 0 auto;
-  display: flex;
-}
+
 @media screen and (max-width: 1440px) {
   .name {
     font-size: 5rem;
@@ -64,10 +65,6 @@
     flex: 0;
     margin-left: 2rem;
   }
-  .img {
-    height: 687px;
-    width: 466px;
-  }
 }
 
 @media screen and (max-width: 1340px) {
@@ -80,10 +77,15 @@
     text-align: center;
     padding: 1rem 5rem;
     height: auto;
+    margin-top: 0;
   }
   .description {
     flex: 0;
     padding: 0;
+  }
+  .img {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }
 
@@ -101,11 +103,7 @@
   .text {
     font-size: 1.5rem;
   }
-  .img {
-    width: auto;
-    height: 300px;
-    margin-bottom: 2rem;
-  }
+
   .description {
     flex: 0;
   }
