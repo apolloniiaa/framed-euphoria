@@ -53,13 +53,15 @@ const ContactPage = () => {
 
               <div>
                 <p className={style.info}>
-                  <span className={style.span}>Cím:</span> Budapest,Hungary
+                  <span className={style.spans}>Cím:</span> Budapest,Hungary
                 </p>
                 <p className={style.info}>
-                  <span>Email:</span> baloghjanos1011@gmail.com
+                  <span className={style.spans}>Email:</span>
+                  baloghjanos1011@gmail.com
                 </p>
                 <p className={style.info}>
-                  <span>Weboldal:</span> www.woodlandcapture.com
+                  <span className={style.spans}> Weboldal</span>
+                  www.woodlandcapture.com
                 </p>
               </div>
             </div>
