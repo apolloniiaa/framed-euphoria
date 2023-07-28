@@ -60,12 +60,21 @@ const ContactPage = () => {
                   baloghjanos1011@gmail.com
                 </p>
                 <p className={style.info}>
-                  <span className={style.spans}> Weboldal</span>
+                  <span className={style.spans}> Weboldal:</span>
                   www.woodlandcapture.com
+                </p>
+                <p className={style.info}>
+                  <span className={style.spans}> Esküvői videók: </span>
+                  <a
+                    href='https://vimeo.com/user181788788'
+                    className={`${style.spans} ${style.underlineWhiteLink}`}
+                  >
+                    Megnézem
+                  </a>
                 </p>
               </div>
             </div>
-            <div>
+            <div className={style.formWrapper}>
               <form
                 action='https://getform.io/f/ddc105f4-9955-4138-bb79-30d8e826dcf1'
                 method='POST'
@@ -77,7 +86,7 @@ const ContactPage = () => {
                   value={name}
                   onChange={handleNameChange}
                   name='name'
-                  style={{ width: '450px', height: '86px' }}
+                  className={style.inputs}
                 />
 
                 <input
@@ -86,7 +95,7 @@ const ContactPage = () => {
                   value={email}
                   onChange={handleEmailChange}
                   name='email'
-                  style={{ width: '450px', height: '86px' }}
+                  className={style.inputs}
                 />
                 <textarea
                   placeholder='Üzenet'
@@ -96,8 +105,8 @@ const ContactPage = () => {
                   onChange={handleMessageChange}
                   name='message'
                   type='text'
-                  className={style.message}
-                  style={{ width: '450px', height: '86px', resize: 'both' }}
+                  className={`${style.message} ${style.inputs}`}
+                  style={{ height: '86px', resize: 'both' }}
                 ></textarea>
                 <SendButton type='submit'>Küldés</SendButton>
               </form>

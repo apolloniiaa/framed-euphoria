@@ -65,7 +65,7 @@ const ImageSlider = () => {
             }}
             className={styles.subtitles}
           >
-            since 2015
+            since 2023
           </motion.p>
         </motion.div>
       </div>

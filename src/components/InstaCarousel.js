@@ -13,19 +13,15 @@ const InstaCarousel = () => {
   const games = [
     {
       backgroundImage: image1,
-      description: 'Lorem..',
     },
     {
       backgroundImage: image2,
-      description: 'Dota 2 is a multiplayer online battle arena by Valve...',
     },
     {
       backgroundImage: image3,
-      description: 'Dota 2 is a multiplayer online battle arena by Valve...',
     },
     {
       backgroundImage: image4,
-      description: 'Dota 2 is a multiplayer online battle arena by Valve...',
     },
   ];
 

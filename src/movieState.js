@@ -58,19 +58,19 @@ export const MovieState = () => {
       galleryImages: galleryImages3,
       awards: [
         {
-          title: 'Truly A masterpiece',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+          // title: 'Truly A masterpiece',
+          // description:
+          //   '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
         {
-          title: 'Fresh look on',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+          // title: 'Fresh look on',
+          // description:
+          //   '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
         {
-          title: 'It’s okay lmao.',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+          // title: 'It’s okay lmao.',
+          // description:
+          //   '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
         },
       ],
     },
@@ -82,21 +82,21 @@ export const MovieState = () => {
       secondaryImg: img1,
       galleryImages: galleryImages2,
       awards: [
-        {
-          title: 'Truly A masterpiece',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'Fresh look ',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'It’s okay lmao.',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
+        // {
+        //   title: 'Truly A masterpiece',
+        //   description:
+        //     '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+        // },
+        // {
+        //   title: 'Fresh look ',
+        //   description:
+        //     '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+        // },
+        // {
+        //   title: 'It’s okay lmao.',
+        //   description:
+        //     '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+        // },
       ],
     },
     {
@@ -106,21 +106,21 @@ export const MovieState = () => {
       url: '/projects/parok',
       secondaryImg: img3,
       awards: [
-        {
-          title: 'Truly A masterpiece',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'Fresh look on ',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
-        {
-          title: 'It’s okay lmao.',
-          description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-        },
+        // {
+        //   title: 'Truly A masterpiece',
+        //   description:
+        //     '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+        // },
+        // {
+        //   title: 'Fresh look on ',
+        //   description:
+        //     '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+        // },
+        // {
+        //   title: 'It’s okay lmao.',
+        //   description:
+        //     '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
+        // },
       ],
     },
   ];

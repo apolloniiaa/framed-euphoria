@@ -21,8 +21,8 @@ blockContainer {
 @media (max-width: 767px) {
   .text {
     width: auto;
-    background: #f2f2f27a;
     padding: 2rem;
+    background: #f2f2f27a;
     margin: 0 auto;
   }
 }
