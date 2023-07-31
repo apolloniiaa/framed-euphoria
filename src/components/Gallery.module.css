@@ -58,6 +58,21 @@
   transform: scale(1.1);
 }
 
+.pics {
+  /* ... (previous styles) */
+  overflow: hidden; /* Hide overflowing image during animation */
+}
+
+.images {
+  /* ... (previous styles) */
+  opacity: 0; /* Start with image opacity set to 0 for fade-in effect */
+  transition: opacity 0.5s ease; /* Smooth transition for opacity change */
+}
+
+.loaded {
+  opacity: 1; /* When loaded, set the opacity to 1 for the fade-in effect */
+}
+
 @keyframes fadeInOut {
   0% {
     opacity: 0;

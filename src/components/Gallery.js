@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import '../components/Model.css';
 import style from '../components/Gallery.module.css';
 
@@ -8,7 +8,8 @@ const Gallery = ({ images }) => {
   const [visibleImages, setVisibleImages] = useState([]);
   const [loadedImages, setLoadedImages] = useState([]);
   const [showMoreImages, setShowMoreImages] = useState(false);
-  const [loadInProgress, setLoadInProgress] = useState(true);
+  const [loadingIndex, setLoadingIndex] = useState(-1);
+  const [batchSize, setBatchSize] = useState(3); // Change this number to adjust batch size
 
   const getImg = (imgSrc) => {
     setTempImgSrc(imgSrc);
@@ -19,65 +20,69 @@ const Gallery = ({ images }) => {
     setModel(false);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      let maxVisibleImages;
+  const handleResize = useCallback(() => {
+    const screenWidth = window.innerWidth;
+    let maxVisibleImages;
 
-      if (screenWidth <= 767) {
-        maxVisibleImages = 3;
-      } else if (screenWidth <= 1024) {
-        maxVisibleImages = 6;
-      } else {
-        maxVisibleImages = 10;
-      }
+    if (screenWidth <= 767) {
+      maxVisibleImages = 3;
+    } else if (screenWidth <= 1024) {
+      maxVisibleImages = 6;
+    } else {
+      maxVisibleImages = 10;
+    }
 
-      setVisibleImages(
-        images.slice(0, showMoreImages ? images.length : maxVisibleImages)
-      );
-    };
-
-    handleResize();
-
-    // Add event listener for window resize
-    const debouncedHandleResize = debounce(handleResize, 200);
-    window.addEventListener('resize', debouncedHandleResize);
-
-    return () => {
-      // Remove event listener on component unmount
-      window.removeEventListener('resize', debouncedHandleResize);
-    };
+    setVisibleImages(
+      images.slice(0, showMoreImages ? images.length : maxVisibleImages)
+    );
   }, [images, showMoreImages]);
 
   useEffect(() => {
-    const loadImages = async () => {
-      if (loadInProgress) {
-        // Betöltés folyamatban van, a "Töltés..." üzenet látható
-        const promises = visibleImages.map((item) => {
-          return new Promise((resolve, reject) => {
-            const img = new Image();
-            img.src = item.imgSrc;
-            img.onload = () => resolve(item.id);
-            img.onerror = () => reject(item.id);
-          });
-        });
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [handleResize]);
 
-        try {
-          const loadedIds = await Promise.all(promises);
-          setLoadedImages(loadedIds);
-        } catch (error) {
-          console.error('Error loading images:', error);
-        } finally {
-          setLoadInProgress(false); // Betöltés befejezése
-        }
+  useEffect(() => {
+    setLoadingIndex(-1); // Reset loading index when visibleImages changes
+  }, [visibleImages]);
+
+  const handleImageLoad = (itemId) => {
+    setLoadedImages((prevLoadedIds) => [...prevLoadedIds, itemId]);
+  };
+
+  useEffect(() => {
+    const loadImages = async () => {
+      if (loadingIndex === -1 || loadingIndex >= visibleImages.length) return;
+
+      for (
+        let i = loadingIndex;
+        i < Math.min(loadingIndex + batchSize, visibleImages.length);
+        i++
+      ) {
+        const item = visibleImages[i];
+        setLoadingIndex((prevIndex) => prevIndex + 1);
+
+        const img = new Image();
+        img.src = item.imgSrc;
+        img.onload = () => {
+          handleImageLoad(item.id);
+        };
+        img.onerror = () => {
+          console.error('Error loading image:', item.imgSrc);
+          handleImageLoad(item.id); // Even if the image fails to load, consider it loaded to continue the process
+        };
       }
     };
 
     loadImages();
-  }, [visibleImages, loadInProgress]);
+  }, [visibleImages, loadingIndex, batchSize]);
 
   const toggleShowMoreImages = () => {
     setShowMoreImages((prevValue) => !prevValue);
+    setBatchSize(3); // Reset batchSize when the button is clicked
   };
 
   return (
@@ -99,14 +104,19 @@ const Gallery = ({ images }) => {
               src={item.imgSrc}
               alt='gallery-image'
               className={`${style.images} ${
-                loadedImages.includes(item.id) ? 'loaded' : ''
+                loadedImages.includes(item.id) ? style.loaded : ''
               }`}
+              onLoad={() => handleImageLoad(item.id)}
             />
           </div>
         ))}
       </div>
 
-      {loadInProgress && <div className={style.loadingMessage}>Töltés...</div>}
+      {loadingIndex !== -1 && (
+        <div className={`${style.loadingMessage} ${style.fadeInOut}`}>
+          Töltés...
+        </div>
+      )}
 
       {!showMoreImages && images.length > visibleImages.length && (
         <div className={style.moreBtnContainer}>
