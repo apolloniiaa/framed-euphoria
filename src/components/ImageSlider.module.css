@@ -71,7 +71,7 @@
     font-size: 1rem;
   }
   .intro .intro-header {
-    padding: 6rem 0rem;
+    padding: 3rem 0rem;
     margin-top: 0;
   }
   .intro-slideshow {
@@ -84,7 +84,7 @@
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(4px);
     width: auto;
-    background: #c5b6a863;
+    background: #c5b6a833;
     margin-top: 0;
   }
 }
