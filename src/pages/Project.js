@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { fade, photoAnim, lineAnim } from '../animation';
 import img21 from '../assets/img/wedding-banner.jpg';
-import img22 from '../assets/img/paros-banner.jpg';
+import img22 from '../assets/img/paros-header.jpg';
 import img23 from '../assets/img/jegyes-banner.jpg';
 import style from './Project.module.css';
 

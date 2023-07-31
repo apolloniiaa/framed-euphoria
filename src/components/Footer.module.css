@@ -33,7 +33,6 @@ svg {
 @media screen and (max-width: 1024px) {
   .footerIcons {
     gap: 4rem;
-    padding: 10rem 0 3rem 0;
   }
 }
 @media screen and (max-width: 767px) {

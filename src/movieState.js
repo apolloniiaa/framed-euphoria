@@ -5,6 +5,7 @@ import img3 from './assets/img/img11-md.jpg';
 import img4 from './assets/img/img28-md.jpg';
 import img5 from './assets/img/img48-md.jpg';
 import img26 from './assets/img/paros-banner.jpg';
+import img27 from './assets/img/paros-header.jpg';
 
 //jegyes
 import img9 from './assets/img/img8-md.jpg';
