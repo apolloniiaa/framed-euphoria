@@ -52,7 +52,7 @@ const Award = ({ title, description }) => {
   return (
     <div className={style.awardStyle}>
       <h3>{title}</h3>
-      <div className={style.line}></div>
+      {/* <div className={style.line}></div> */}
       <p className={style.description}>{description}</p>
     </div>
   );

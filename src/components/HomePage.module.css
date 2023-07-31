@@ -90,12 +90,16 @@
   }
   .img {
     margin-bottom: 2rem;
+    width: 520px;
   }
 }
 
 @media screen and (max-width: 767px) {
   .imgContainer {
     margin: 3rem 0 3rem 0;
+  }
+  .img {
+    width: 240px;
   }
   .about {
     padding: 0rem 2rem;
