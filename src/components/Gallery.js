@@ -7,6 +7,8 @@ const Gallery = ({ images }) => {
   const [tempImgSrc, setTempImgSrc] = useState('');
   const [visibleImages, setVisibleImages] = useState([]);
   const [loadedImages, setLoadedImages] = useState([]);
+  const [showMoreImages, setShowMoreImages] = useState(false);
+  const [loadInProgress, setLoadInProgress] = useState(true);
 
   const getImg = (imgSrc) => {
     setTempImgSrc(imgSrc);
@@ -30,22 +32,29 @@ const Gallery = ({ images }) => {
         maxVisibleImages = 10;
       }
 
-      setVisibleImages(images.slice(0, maxVisibleImages));
+      setVisibleImages(
+        images.slice(0, showMoreImages ? images.length : maxVisibleImages)
+      );
     };
 
     handleResize();
 
     // Add event listener for window resize
-    window.addEventListener('resize', handleResize);
+    const debouncedHandleResize = debounce(handleResize, 200);
+    window.addEventListener('resize', debouncedHandleResize);
 
     return () => {
       // Remove event listener on component unmount
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', debouncedHandleResize);
     };
-  }, [images]);
+  }, [images, showMoreImages]);
 
   useEffect(() => {
     const loadImages = async () => {
+      if (loadInProgress) return;
+
+      setLoadInProgress(true); // Set loading state to true
+
       const promises = visibleImages.map((item) => {
         return new Promise((resolve, reject) => {
           const img = new Image();
@@ -60,11 +69,17 @@ const Gallery = ({ images }) => {
         setLoadedImages(loadedIds);
       } catch (error) {
         console.error('Error loading images:', error);
+      } finally {
+        setLoadInProgress(false); // Set loading state to false when done
       }
     };
 
     loadImages();
-  }, [visibleImages]);
+  }, [visibleImages, loadInProgress]);
+
+  const toggleShowMoreImages = () => {
+    setShowMoreImages((prevValue) => !prevValue);
+  };
 
   return (
     <>
@@ -75,6 +90,8 @@ const Gallery = ({ images }) => {
       )}
 
       <div className={style.gallery}>
+        {loadInProgress && <div>Töltés...</div>}{' '}
+        {/* Show "Töltés..." message while loading */}
         {visibleImages.map((item) => (
           <div
             className={style.pics}
@@ -91,18 +108,43 @@ const Gallery = ({ images }) => {
           </div>
         ))}
       </div>
-      {images.length > visibleImages.length && (
+
+      {!showMoreImages && images.length > visibleImages.length && (
         <div className={style.moreBtnContainer}>
           <button
             className={style.showMoreButton}
-            onClick={() => setVisibleImages(images.slice(0, images.length))}
+            onClick={toggleShowMoreImages}
           >
             Mutass többet
           </button>
         </div>
       )}
+
+      {showMoreImages && (
+        <div className={style.moreBtnContainer}>
+          <button
+            className={style.showMoreButton}
+            onClick={toggleShowMoreImages}
+          >
+            Mutass kevesebbet
+          </button>
+        </div>
+      )}
     </>
   );
+};
+
+// Helper function to debounce window resize event
+const debounce = (func, delay) => {
+  let timeoutId;
+  return function (...args) {
+    if (timeoutId) {
+      clearTimeout(timeoutId);
+    }
+    timeoutId = setTimeout(() => {
+      func.apply(this, args);
+    }, delay);
+  };
 };
 
 export default Gallery;
