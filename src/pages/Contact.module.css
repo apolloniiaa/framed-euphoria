@@ -2,7 +2,7 @@
 
 section {
   padding: 0 10rem;
-  height: 65vh;
+  height: 85vh;
 }
 #contact {
   color: #fffaed;
@@ -53,7 +53,6 @@ h4 {
 }
 .subtitles {
   text-align: center;
-  font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: left;
 }
@@ -63,6 +62,7 @@ p {
   padding: 0.7rem;
   color: #fffaed;
   text-align: center;
+  font-family: Spectral, Sans-serif;
 }
 .spans {
   text-transform: uppercase;
@@ -142,6 +142,9 @@ textarea::placeholder {
   color: red;
   margin-top: 0.5rem;
   font-size: 0.8rem;
+}
+.formWrapper {
+  margin-top: 3rem;
 }
 @media screen and (min-width: 1441px) and (max-width: 1900px) {
   .data {

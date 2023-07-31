@@ -14,8 +14,12 @@
 
 .loadingMessage {
   font-size: 1.5rem;
-  animation: fadeInOut 0.5s ease-in-out;
+  opacity: 0;
 }
+.fadeInOut {
+  transition: opacity 0.5s ease-in-out;
+}
+
 .pics {
   column-gap: 1.5rem;
   padding: 2rem 3% 0%;
