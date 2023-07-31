@@ -51,26 +51,25 @@ const Gallery = ({ images }) => {
 
   useEffect(() => {
     const loadImages = async () => {
-      if (loadInProgress) return;
-
-      setLoadInProgress(true); // Set loading state to true
-
-      const promises = visibleImages.map((item) => {
-        return new Promise((resolve, reject) => {
-          const img = new Image();
-          img.src = item.imgSrc;
-          img.onload = () => resolve(item.id);
-          img.onerror = () => reject(item.id);
+      if (loadInProgress) {
+        // Betöltés folyamatban van, a "Töltés..." üzenet látható
+        const promises = visibleImages.map((item) => {
+          return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.src = item.imgSrc;
+            img.onload = () => resolve(item.id);
+            img.onerror = () => reject(item.id);
+          });
         });
-      });
 
-      try {
-        const loadedIds = await Promise.all(promises);
-        setLoadedImages(loadedIds);
-      } catch (error) {
-        console.error('Error loading images:', error);
-      } finally {
-        setLoadInProgress(false); // Set loading state to false when done
+        try {
+          const loadedIds = await Promise.all(promises);
+          setLoadedImages(loadedIds);
+        } catch (error) {
+          console.error('Error loading images:', error);
+        } finally {
+          setLoadInProgress(false); // Betöltés befejezése
+        }
       }
     };
 
@@ -90,8 +89,6 @@ const Gallery = ({ images }) => {
       )}
 
       <div className={style.gallery}>
-        {loadInProgress && <div>Töltés...</div>}{' '}
-        {/* Show "Töltés..." message while loading */}
         {visibleImages.map((item) => (
           <div
             className={style.pics}
@@ -109,10 +106,12 @@ const Gallery = ({ images }) => {
         ))}
       </div>
 
+      {loadInProgress && <div className={style.loadingMessage}>Töltés...</div>}
+
       {!showMoreImages && images.length > visibleImages.length && (
         <div className={style.moreBtnContainer}>
           <button
-            className={style.showMoreButton}
+            className={`${style.showMoreButton} ${style.fadeInOut}`}
             onClick={toggleShowMoreImages}
           >
             Mutass többet
@@ -123,7 +122,7 @@ const Gallery = ({ images }) => {
       {showMoreImages && (
         <div className={style.moreBtnContainer}>
           <button
-            className={style.showMoreButton}
+            className={`${style.showMoreButton} ${style.fadeInOut}`}
             onClick={toggleShowMoreImages}
           >
             Mutass kevesebbet

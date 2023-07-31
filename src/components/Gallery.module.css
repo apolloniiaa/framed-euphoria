@@ -5,6 +5,17 @@
   column-gap: 1.5rem;
 }
 
+.galleryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Set height to 100% to occupy the full available height */
+}
+
+.loadingMessage {
+  font-size: 1.5rem;
+  animation: fadeInOut 0.5s ease-in-out;
+}
 .pics {
   column-gap: 1.5rem;
   padding: 2rem 3% 0%;
@@ -41,6 +52,24 @@
 }
 .showMoreButton:hover {
   transform: scale(1.1);
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  animation: fadeInOut 0.5s ease-in-out;
 }
 @media screen and (max-width: 1024px) {
   .gallery {
