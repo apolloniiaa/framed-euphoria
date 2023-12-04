@@ -2,14 +2,13 @@
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 2rem;
-  /* background-image: linear-gradient(to top, #6a5036,#c5b6a812); */
 }
 h2 {
   padding: 2rem 0;
 }
 .line {
   height: 0.2rem;
-  background: whitesmoke;
+  background: #523a28;
   margin-bottom: 2rem;
 }
 .images {

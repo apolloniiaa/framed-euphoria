@@ -43,7 +43,8 @@ const Footer = () => {
       <div className={style.footer}>
         <div className={style.footerRow}>
           <div className={style.footerCopyright}>
-            &copy; 2023 Woodland Capture. All rights reserved.
+            Crafted with passion by Divine Inborn Studio. <br /> &copy; 2023
+            Woodland Capture.
           </div>
         </div>
       </div>

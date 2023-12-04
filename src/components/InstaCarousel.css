@@ -95,7 +95,7 @@
 }
 
 .dot.active {
-  background-color: #6e5248;
+  background-color: #523a28;
 }
 .line-title {
   display: flex;
@@ -103,7 +103,7 @@
   flex-direction: column;
   align-items: center;
   font-size: 2.7rem;
-  color: #6e5248;
+  color: #523a28;
 }
 
 .follow-text {

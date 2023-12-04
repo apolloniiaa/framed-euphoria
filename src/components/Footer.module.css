@@ -10,14 +10,14 @@
   align-content: center;
   align-items: center;
   justify-content: center;
-  background: #d8d2d2;
+  background: #523a28;
 }
 
 .footerIcons {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 18rem 0 7rem 0;
+  padding: 7rem 0 7rem 0;
   gap: 7rem;
 }
 
@@ -26,9 +26,10 @@ svg {
 }
 
 .footerCopyright {
-  margin: 0 auto;
-  font-size: 0.7rem;
-  color: #35251f;
+  margin: 1rem auto;
+  font-size: 1rem;
+  color: #e4d4c8;
+  text-align: center;
 }
 @media screen and (max-width: 1024px) {
   .footerIcons {

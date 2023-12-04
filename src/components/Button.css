@@ -4,27 +4,27 @@
   text-transform: uppercase;
   line-height: 3em;
   letter-spacing: 1px;
-  fill: #ffffff;
-  color: #ffffff;
-  background-color: #02010100;
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: #ffffff;
-  border-radius: 0px 0px 0px 0px;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem auto;
-  height: 50px;
   width: 150px;
+  background: #523a28;
+  color: #e4d4c8;
+  transition: background 0.3s ease, color 0.3s ease;
+  border: none;
 }
 
 .button:hover {
-  transform: scale(0.3);
-  transition-duration: 0.1s;
+  background: #e4d4c8;
+  color: #523a28;
 }
 
+.button:active {
+  transform: scale(0.95);
+  transition: transform 0.1s ease;
+}
 @media screen and (max-width: 767px) {
   .button {
     height: 33px;
